@@ -37,11 +37,12 @@ defaults -currentHost write NSGlobalDomain com.apple.trackpad.enableSecondaryCli
 # Disable press-and-hold for keys (e.g. accented characters) in favour of key repeat
 defaults write NSGlobalDomain ApplePressAndHoldEnabled -bool false
 
-# Set a blazingly fast keyboard repeat rate
+# Set fastest key repeat and shortest delay until repeat
 defaults write NSGlobalDomain KeyRepeat -int 0
+#defaults write NSGlobalDomain InitialKeyRepeat -int 12
 
 # Set language and text formats
-# defaults write NSGlobalDomain AppleLanguages -array "en" "nl"
+defaults write NSGlobalDomain AppleLanguages -array "en" "nl"
 defaults write NSGlobalDomain AppleLocale -string "en_GB@currency=GBP"
 defaults write NSGlobalDomain AppleMeasurementUnits -string "Centimeters"
 defaults write NSGlobalDomain AppleMetricUnits -bool true
@@ -109,4 +110,3 @@ defaults write com.apple.terminal FocusFollowsMouse -bool true
 defaults write org.x.X11 wm_ffm -bool true
 
 echo "Done OS X configurations. Some changes require a logout/restart to take effect."
-
