@@ -1,0 +1,10 @@
+#!/usr/bin/env bash
+
+if ! [[ $(command -v brew) ]]; then
+  ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+fi
+
+brew update
+brew install caskroom/cask/brew-cask
+brew tap homebrew/bundle
+brew bundle
