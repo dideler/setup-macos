@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+
+rbenv rehash
+rbenv install 2.2.3
