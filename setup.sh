@@ -9,5 +9,11 @@ mkdir -p ~/github
 git clone git@github.com:dideler/setup-osx.git ~/github/setup-osx
 
 pushd ~/github/setup-osx
-  source osx-defaults
+  # TODO: Some of these can probably run parallel in child processes.
+  source settings/osx-defaults
+  source package-managers/homebrew
+  source languages/ruby
+  source package-managers/npm
+  source package-managers/gems
+  # TODO: Consider creating directories like homebrew/, ruby/, node/ instead
 popd
