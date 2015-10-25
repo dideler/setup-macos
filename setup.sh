@@ -5,6 +5,8 @@ if [[ "$(uname)" != "Darwin" ]]; then
   exit 1
 fi
 
+xcode-select --install # Command Line Tools
+
 mkdir -p ~/github
 git clone git@github.com:dideler/setup-osx.git ~/github/setup-osx
 
