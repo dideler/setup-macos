@@ -21,8 +21,9 @@ pushd ~/github/dideler/setup-osx
   bash settings/osx-defaults \
   && bash package-managers/homebrew \
   && bash package-managers/npm \
-  && bash package-managers/gems \
-  && bash languages/ruby \
   && bash languages/node \
+  && bash languages/ruby \
+  && bash package-managers/gems \
+  && bash languages/python3 \
   && bash shells/fish
 popd
