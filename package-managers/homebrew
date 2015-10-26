@@ -13,6 +13,7 @@ taps=(
   'homebrew/dupes'
 )
 
+# FIXME: installation fails when options provided
 formulas=(
   'autoconf'
   'automake'
@@ -21,7 +22,7 @@ formulas=(
   'cmake'
   'colordiff'
   'coreutils'
-  'ffmpeg'
+  'ffmpeg --with-faac'
   'findutils --with-default-names'
   'fish'
   'gawk'
