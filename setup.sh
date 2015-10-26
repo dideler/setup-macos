@@ -5,7 +5,7 @@ if [[ "$(uname)" != "Darwin" ]]; then
   exit 1
 fi
 
-xcode-select --install # Command Line Tools
+xcode-select -p 1>/dev/null || xcode-select --install # Install Command Line Tools if not yet installed.
 
 mkdir -p ~/github
 
