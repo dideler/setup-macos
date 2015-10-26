@@ -96,10 +96,10 @@ casks=(
   'rdm'
   'rowanj-gitx'
   'screenhero'
-  'slack'
-  'spectacle'
-  'vlc'
   # 'shiftit'
+  'slack'
+  'spectacle' # Similar to shifit
+  'vlc'
   # 'mongohub'
   # 'skype'
   # 'dropbox'

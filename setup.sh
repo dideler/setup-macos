@@ -14,8 +14,9 @@ pushd ~/github/setup-osx
   # TODO: Some of these can probably run parallel in child processes.
   source settings/osx-defaults
   source package-managers/homebrew
-  source languages/ruby
   source package-managers/npm
   source package-managers/gems
-  # TODO: Consider creating directories like homebrew/, ruby/, node/ instead
+  source languages/ruby
+  source languages/node
+  source shells/fish
 popd
