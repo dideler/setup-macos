@@ -77,10 +77,10 @@ dupes=(
 casks=(
   '1password'
   'alfred'
-  'alfred'
   'bonjour-browser'
   'caffeine'
   'dash'
+  'dockertoolbox'
   'firefox'
   'flux'
   'flycut'
@@ -103,7 +103,6 @@ casks=(
   # 'mongohub'
   # 'skype'
   # 'dropbox'
-  # TODO: docker
 )
 
 for tap in "${taps[@]}"; do
