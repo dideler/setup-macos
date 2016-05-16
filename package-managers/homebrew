@@ -11,6 +11,7 @@ taps=(
   'git-duet/tap'
   'homebrew/bundle'
   'homebrew/dupes'
+  'homebrew/services'
 )
 
 # FIXME: installation fails when options provided
