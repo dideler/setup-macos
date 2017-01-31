@@ -124,5 +124,5 @@ for dupe in "${dupes[@]}"; do
 done
 
 for cask in "${casks[@]}"; do
-  brew cask install "$cask" --appdir="/Applications"
+  brew cask install "$cask"
 done
