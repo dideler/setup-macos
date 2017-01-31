@@ -15,7 +15,6 @@ taps=(
   'homebrew/services'
 )
 
-# FIXME: installation fails when options provided
 formulas=(
   'autoconf'
   'automake'
@@ -113,11 +112,11 @@ for tap in "${taps[@]}"; do
 done
 
 for formula in "${formulas[@]}"; do
-  brew install "$formula"
+  eval "brew install ${formula}"
 done
 
 for dupe in "${dupes[@]}"; do
-  brew install "$dupe"
+  eval "brew install ${dupe}"
 done
 
 for cask in "${casks[@]}"; do
