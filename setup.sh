@@ -17,17 +17,17 @@ if [[ ! -f ~/.ssh/id_rsa ]]; then
   read -p "Add copied SSH key to https://github.com/settings/keys then press Enter to continue..."
 fi
 
-mkdir -p ~/github
+mkdir -p ~/github.com
 
-rm -rf ~/github/dideler/dotfiles
-git clone https://github.com/dideler/dotfiles.git ~/github/dideler/dotfiles # HTTPS clone avoids SSH setup.
-pushd ~/github/dideler/dotfiles
+rm -rf ~/github.com/dideler/dotfiles
+git clone git@github.com:dideler/dotfiles.git ~/github.com/dideler/dotfiles
+pushd ~/github.com/dideler/dotfiles
   bash link_dotfiles -f
 popd
 
-rm -rf ~/github/dideler/setup-macos
-git clone git@github.com:dideler/setup-macos.git ~/github/dideler/setup-macos
-pushd ~/github/dideler/setup-macos
+rm -rf ~/github.com/dideler/setup-macos
+git clone git@github.com:dideler/setup-macos.git ~/github.com/dideler/setup-macos
+pushd ~/github.com/dideler/setup-macos
   # TODO: Some of these can probably run in parallel. And maybe use nohup?
   bash settings/os-defaults \
   && bash package-managers/homebrew \
@@ -38,3 +38,5 @@ pushd ~/github/dideler/setup-macos
   && bash languages/python3 \
   && bash shells/fish
 popd
+
+echo "All done!"
