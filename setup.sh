@@ -16,11 +16,11 @@ pushd ~/github/dideler/dotfiles
   bash link_dotfiles -f
 popd
 
-rm -rf ~/github/dideler/setup-osx
-git clone https://github.com/dideler/setup-osx.git ~/github/dideler/setup-osx # HTTPS clone avoids SSH setup.
-pushd ~/github/dideler/setup-osx
+rm -rf ~/github/dideler/setup-macos
+git clone git@github.com:dideler/setup-macos.git ~/github/dideler/setup-macos
+pushd ~/github/dideler/setup-macos
   # TODO: Some of these can probably run in parallel. And maybe use nohup?
-  bash settings/osx-defaults \
+  bash settings/os-defaults \
   && bash package-managers/homebrew \
   && bash package-managers/npm \
   && bash languages/node \
