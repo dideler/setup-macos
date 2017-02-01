@@ -81,6 +81,7 @@ dupes=(
 casks=(
   '1password'
   'alfred'
+  'atom'
   'bonjour-browser'
   'caffeine'
   'dash'
@@ -96,8 +97,7 @@ casks=(
   'iterm2'
   'java'
   'little-snitch'
-  'pepper-flash'
-  'pgadmin3'
+  'pgadmin4'
   'psequel'
   'rdm'
   'rowanj-gitx'
@@ -107,8 +107,8 @@ casks=(
   'spectacle' # Similar to shifit
   'vlc'
   # 'mongohub'
-  # 'skype'
-  # 'dropbox'
+  'skype'
+  # 'dropbox' # Has issues with 2FA. Go to https://www.dropbox.com/install.
 )
 
 for tap in "${taps[@]}"; do
