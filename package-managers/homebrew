@@ -97,6 +97,7 @@ casks=(
   'iterm2'
   'java'
   'little-snitch'
+  'mactex'
   'pgadmin4'
   'psequel'
   'rdm'
