@@ -71,7 +71,7 @@ dupes=(
   'grep --with-default-names'
   'less'
   'make --with-default-names'
-  'openssh'
+  # 'openssh' # Disabled because it lacks keychain support.
   'rsync'
   'screen'
   'unzip'
