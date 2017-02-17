@@ -46,6 +46,7 @@ formulas=(
   'hub'
   'imagemagick'
   'jp2a'
+  'jq'
   'md5sha1sum'
   'node'
   'openssl'
