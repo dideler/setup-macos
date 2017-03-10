@@ -50,6 +50,7 @@ formulas=(
   'md5sha1sum'
   'node'
   'openssl'
+  'poppler'
   'postgresql'
   'python3'
   'rbenv'
