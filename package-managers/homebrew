@@ -6,7 +6,6 @@ fi
 
 brew analytics off
 brew update
-brew install caskroom/cask/brew-cask
 
 taps=(
   'git-duet/tap'
