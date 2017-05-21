@@ -58,6 +58,7 @@ formulas=(
   'redis'
   'ripgrep'
   'ruby-build'
+  'shellcheck'
   'the_silver_searcher'
   'trash'
   'tree'
