@@ -1,4 +1,7 @@
 #!/usr/bin/env bash
 
-npm install -g n
-npm install -g picture-tube
+npm install --global \
+  n \
+  picture-tube \
+  favicon-emoji \
+  open-pip-cli
