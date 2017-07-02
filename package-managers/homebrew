@@ -48,6 +48,7 @@ formulas=(
   'jq'
   'md5sha1sum'
   'moreutils'
+  'neovim'
   'node'
   'openssl'
   'poppler'
