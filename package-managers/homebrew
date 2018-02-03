@@ -91,6 +91,7 @@ casks=(
   'copyq'
   'dash'
   'discord'
+  'dawnlabs-alchemy'
   'docker'
   'firefox'
   'flux'
