@@ -4,4 +4,5 @@ npm install --global \
   n \
   picture-tube \
   favicon-emoji \
-  open-pip-cli
+  open-pip-cli \
+  fkill-cli
