@@ -102,6 +102,7 @@ casks=(
   'java'
   # 'little-snitch'
   'mactex'
+  'ngrok'
   'pgadmin4'
   'psequel'
   'rdm'
