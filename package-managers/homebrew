@@ -18,6 +18,7 @@ formulas=(
   'autoconf'
   'automake'
   'bash'
+  'bat'
   'cloc'
   'cmake'
   'colordiff'
