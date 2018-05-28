@@ -5,4 +5,6 @@ npm install --global \
   picture-tube \
   favicon-emoji \
   open-pip-cli \
-  fkill-cli
+  fkill-cli \
+  imageoptim-cli \
+  git-mob
