@@ -54,6 +54,7 @@ formulas=(
   'jpeg'
   'jq'
   'less'
+  'lzop'
   'make'
   'md5sha1sum'
   'moreutils'
