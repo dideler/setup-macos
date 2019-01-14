@@ -25,6 +25,7 @@ formulas=(
   'coreutils'
   'curl'
   'diff-so-fancy'
+  'exa'
   'ffmpeg --with-faac'
   'findutils --with-default-names'
   'fish'
