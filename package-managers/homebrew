@@ -59,6 +59,7 @@ formulas=(
   'make'
   'md5sha1sum'
   'moreutils'
+  'ncdu'
   'neovim'
   'node'
   'openssl'
