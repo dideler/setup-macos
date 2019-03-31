@@ -33,6 +33,7 @@ formulas=(
   'git'
   'git-duet'
   'git-lfs'
+  'gitleaks'
   'gnu-getopt'
   'gnu-indent --with-default-names'
   'gnu-sed --with-default-names'
