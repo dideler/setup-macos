@@ -73,6 +73,7 @@ formulas=(
   'rbenv-default-gems'
   'rbenv-gem-rehash'
   'redis'
+  'rename'
   'ripgrep'
   'rsync'
   'ruby-build'
