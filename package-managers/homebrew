@@ -75,6 +75,7 @@ formulas=(
   'redis'
   'rename'
   'ripgrep'
+  'ripgrep-all'
   'rsync'
   'ruby-build'
   'shellcheck'
