@@ -30,6 +30,7 @@ formulas=(
   'ffmpeg --with-faac'
   'findutils --with-default-names'
   'fish'
+  'fzf'
   'gawk'
   'git'
   'git-duet'
