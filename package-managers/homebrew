@@ -29,6 +29,7 @@ formulas=(
   'exa'
   'fd'
   'ffmpeg --with-faac'
+  'findomain'
   'findutils --with-default-names'
   'fish'
   'fzf'
