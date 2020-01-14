@@ -36,6 +36,7 @@ formulas=(
   'gawk'
   'git'
   'git-duet'
+  'git-filter-repo'
   'git-lfs'
   'gitleaks'
   'gnu-getopt'
