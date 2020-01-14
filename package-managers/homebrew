@@ -39,6 +39,7 @@ formulas=(
   'git-filter-repo'
   'git-lfs'
   'gitleaks'
+  'glow'
   'gnu-getopt'
   'gnu-indent --with-default-names'
   'gnu-sed --with-default-names'
