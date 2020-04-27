@@ -73,6 +73,14 @@ defaults write NSGlobalDomain AppleLocale -string "en_GB@currency=GBP"
 defaults write NSGlobalDomain AppleMeasurementUnits -string "Centimeters"
 defaults write NSGlobalDomain AppleMetricUnits -bool true
 
+# Hot corner: Top right screen corner → Screen saver
+defaults write com.apple.dock wvous-tr-corner -int 5
+defaults write com.apple.dock wvous-tr-modifier -int 0
+
+# Hot corner: Bottom right screen corner → Sleep screen
+defaults write com.apple.dock wvous-br-corner -int 10
+defaults write com.apple.dock wvous-br-modifier -int 0
+
 # Finder: Show all filename extensions
 defaults write NSGlobalDomain AppleShowAllExtensions -bool true
 
