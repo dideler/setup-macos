@@ -152,14 +152,14 @@ for tap in "${taps[@]}"; do
   brew tap "$tap"
 done
 
+for cask in "${casks[@]}"; do
+  brew cask install "$cask"
+done
+
 for formula in "${formulas[@]}"; do
   eval "brew install ${formula}"
 done
 
 for dupe in "${dupes[@]}"; do
   eval "brew install ${dupe}"
-done
-
-for cask in "${casks[@]}"; do
-  brew cask install "$cask"
 done
