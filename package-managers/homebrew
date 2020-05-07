@@ -25,6 +25,7 @@ formulas=(
   'colordiff'
   'coreutils'
   'curl'
+  'diff-pdf'
   'diff-so-fancy'
   'exa'
   'fd'
