@@ -142,6 +142,7 @@ casks=(
   'spectacle' # Alternative to shifit
   'visual-studio-code'
   'vlc'
+  'xquartz'
   # 'mongohub'
   # 'little-snitch'
   # 'dropbox' # Has issues with 2FA. Go to https://www.dropbox.com/install.
