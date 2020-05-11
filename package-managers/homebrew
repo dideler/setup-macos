@@ -27,6 +27,7 @@ formulas=(
   'curl'
   'diff-pdf'
   'diff-so-fancy'
+  'dos2unix'
   'exa'
   'fd'
   'ffmpeg --with-faac'
