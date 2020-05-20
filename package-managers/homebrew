@@ -131,6 +131,7 @@ casks=(
   'iterm2'
   'java'
   'kap'
+  'lepton'
   'mactex'
   'ngrok'
   'pgadmin4'
