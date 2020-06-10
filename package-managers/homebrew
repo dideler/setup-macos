@@ -118,6 +118,7 @@ casks=(
   'caffeine'
   'copyq'
   'dash'
+  'devdocs'
   'docker'
   'etcher'
   'firefox'
