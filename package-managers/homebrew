@@ -12,6 +12,7 @@ taps=(
   'homebrew/bundle'
   'homebrew/dupes'
   'homebrew/services'
+  'spl/pdftk'
 )
 
 formulas=(
@@ -74,6 +75,7 @@ formulas=(
   'neovim'
   'node'
   'openssl'
+  'pdftk' # Depends on the tap above.
   'pgcli'
   'pngquant'
   'poppler'
