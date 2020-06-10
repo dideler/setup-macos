@@ -15,6 +15,7 @@ taps=(
 )
 
 formulas=(
+  'airshare'
   'autoconf'
   'automake'
   'bandwhich'
