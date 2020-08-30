@@ -1,6 +1,5 @@
 #!/usr/bin/env bash -e
 
-cd "$(dirname "$0")/.."
 source utils.sh
 
 # Install latest asdf version
