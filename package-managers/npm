@@ -7,4 +7,4 @@ npm install --global \
   open-pip-cli \
   fkill-cli \
   imageoptim-cli \
-  git-mob
+  git-mob@0.3.0
