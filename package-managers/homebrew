@@ -8,7 +8,6 @@ brew analytics off
 brew update
 
 taps=(
-  'git-duet/tap'
   'homebrew/bundle'
   'homebrew/dupes'
   'homebrew/services'
@@ -38,7 +37,6 @@ formulas=(
   'fzf'
   'gawk'
   'git'
-  'git-duet'
   'git-filter-repo'
   'git-lfs'
   'gitleaks'
