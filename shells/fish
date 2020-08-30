@@ -1,6 +1,3 @@
 #!/usr/bin/env bash
 
 chsh -s $(which fish)
-
-grep -q "source ~/.asdf/asdf.fish" ~/.config/fish/config.fish || \
-  echo "source ~/.asdf/asdf.fish" >> ~/.config/fish/config.fish
