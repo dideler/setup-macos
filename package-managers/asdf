@@ -1,7 +1,11 @@
-#!/usr/bin/env bash
+#!/usr/bin/env bash -xe
 
-git clone https://github.com/asdf-vm/asdf.git ~/.asdf --branch v0.8.0-rc1
+remote="https://github.com/asdf-vm/asdf.git"
 
-cd ~/.asdf
-git fetch origin --tags
-git checkout "$(git describe --abbrev=0 --tags)"
+latest_tag=$(
+  git ls-remote --tags --exit-code --refs "$remote" | \
+  sed -E 's/^[[:xdigit:]]+[[:space:]]+refs\/tags\/(.+)/\1/g' | \
+  tail -n1
+)
+
+git clone --depth 1 --branch "$latest_tag" ~/.asdf
