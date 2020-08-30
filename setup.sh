@@ -32,6 +32,7 @@ pushd ~/github.com/dideler/setup-macos
   # TODO: Some of these can probably run in parallel. And maybe use nohup?
   bash settings/os-defaults \
   && bash package-managers/homebrew \
+  && bash package-managers/asdf \
   && bash package-managers/npm \
   && bash languages/node \
   && bash languages/ruby \
