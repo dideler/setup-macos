@@ -137,6 +137,7 @@ casks=(
   'mactex'
   'ngrok'
   'pgadmin4'
+  'postico'
   'psequel'
   'rdm'
   'rowanj-gitx'
