@@ -38,7 +38,7 @@ formulas=(
   'eva'
   'exa'
   'fd'
-  'ffmpeg --with-faac'
+  'ffmpeg'
   'findomain'
   'findutils'
   'fish'
@@ -102,7 +102,7 @@ formulas=(
   'trash'
   'tree'
   'unzip'
-  'vim --override-system-vi'
+  'vim'
   'watch'
   'wget'
   'youtube-dl'
@@ -165,7 +165,7 @@ for cask in "${casks[@]}"; do
 done
 
 for formula in "${formulas[@]}"; do
-  eval "brew install ${formula}"
+  brew install "$formula"
 done
 
 # Use GNU commands without "g" prefix.
