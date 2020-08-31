@@ -102,7 +102,7 @@ formulas=(
   'trash'
   'tree'
   'unzip'
-  'vim --override-system-vi --with-python3'
+  'vim --override-system-vi'
   'watch'
   'wget'
   'youtube-dl'
