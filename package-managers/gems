@@ -1,4 +1,0 @@
-#!/usr/bin/env bash -e
-
-gem install foreman
-gem install iStats
