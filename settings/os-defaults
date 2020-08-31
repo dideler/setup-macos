@@ -166,8 +166,8 @@ defaults write org.x.X11 wm_ffm -bool true
 # defaults write com.google.Chrome AppleEnableSwipeNavigateWithScrolls -bool false
 # defaults write com.google.Chrome.canary AppleEnableSwipeNavigateWithScrolls -bool false
 
-# Restart affected apps
-for app in "Dock" "Finder" "Google Chrome" "Google Chrome Canary" "Terminal"; do
+# Restart some of the affected apps
+for app in "Dock" "Finder"; do
   killall "${app}" &> /dev/null
 done
 
