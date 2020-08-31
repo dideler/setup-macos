@@ -2,13 +2,13 @@
 
 source utils.sh
 
-if brew --prefix readline > /dev/null
-  set --export RUBY_CONFIGURE_OPTS "$RUBY_CONFIGURE_OPTS --with-readline-dir=(brew --prefix readline)"
-end
+if brew --prefix readline > /dev/null; then
+  export RUBY_CONFIGURE_OPTS="$RUBY_CONFIGURE_OPTS --with-readline-dir=$(brew --prefix readline)"
+fi
 
-if brew --prefix openssl > /dev/null
-  set --export RUBY_CONFIGURE_OPTS "$RUBY_CONFIGURE_OPTS --with-openssl-dir=(brew --prefix openssl)"
-end
+if brew --prefix openssl > /dev/null; then
+  export RUBY_CONFIGURE_OPTS="$RUBY_CONFIGURE_OPTS --with-openssl-dir=$(brew --prefix openssl)"
+fi
 
 asdf plugin-add ruby
 asdf install ruby latest
