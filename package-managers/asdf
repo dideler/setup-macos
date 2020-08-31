@@ -12,7 +12,7 @@ latest_tag=$(
   tail -n1
 )
 
-git clone --depth 1 --branch "$latest_tag" ~/.asdf
+git clone "$remote" --depth 1 --branch "$latest_tag" ~/.asdf
 
 # Setup for bash
 
