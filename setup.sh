@@ -5,6 +5,10 @@ if [[ "$(uname)" != "Darwin" ]]; then
   exit 1
 fi
 
+for shellrc in ~/.bash_profile ~/.bashrc ~/.zshrc; do
+  touch "${shellrc}"
+done
+
 # Install Command Line Tools if not yet installed.
 xcode-select -p 1>/dev/null || xcode-select --install
 
