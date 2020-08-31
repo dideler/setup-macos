@@ -1,7 +1,9 @@
 #!/usr/bin/env bash -e
 
+source utils.sh
+
 if [[ "$(uname)" != "Darwin" ]]; then
-  echo 'This setup only runs on OS X machines'
+  log_error 'This setup only runs on Mac machines'
   exit 1
 fi
 
