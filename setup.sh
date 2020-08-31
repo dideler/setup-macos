@@ -1,4 +1,4 @@
-#!/usr/bin/env bash -xe
+#!/usr/bin/env bash -e
 
 if [[ "$(uname)" != "Darwin" ]]; then
   echo 'This setup only runs on OS X machines'
