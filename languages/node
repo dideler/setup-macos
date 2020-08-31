@@ -1,5 +1,5 @@
 #!/usr/bin/env bash -e
 
 asdf plugin-add nodejs
-asdf install nodejs 14.9.0
-asdf global nodejs 14.9.0
+asdf install nodejs latest
+asdf global nodejs $(asdf latest nodejs)
