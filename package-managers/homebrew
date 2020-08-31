@@ -161,7 +161,7 @@ for tap in "${taps[@]}"; do
 done
 
 for cask in "${casks[@]}"; do
-  brew cask install "$cask"
+  brew cask install "$cask" || true
 done
 
 for formula in "${formulas[@]}"; do
