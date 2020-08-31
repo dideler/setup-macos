@@ -38,4 +38,4 @@ pushd ~/github.com/dideler/setup-macos
   shells/fish &
 popd
 
-echo "All done!"
+wait && echo "All done!"
