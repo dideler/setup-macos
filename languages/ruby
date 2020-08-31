@@ -1,12 +1,6 @@
 #!/usr/bin/env bash -e
 
-rbenv rehash
-rbenv install 2.2.3
-rbenv global 2.2.3
+asdf plugin-add ruby
+asdf install ruby latest
+asdf global ruby $(asdf latest ruby)
 
-echo 'export PATH="$HOME/.rbenv/bin:$PATH"' >> ~/.bash_profile
-echo 'eval "$(rbenv init -)"' >> ~/.bash_profile
-source ~/.bash_profile
-
-brew upgrade rbenv --HEAD
-brew upgrade ruby-build --HEAD
