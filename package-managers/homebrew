@@ -70,7 +70,6 @@ formulas=(
   'moreutils'
   'ncdu'
   'neovim'
-  'node'
   'openssl'
   'pgcli'
   'pngquant'

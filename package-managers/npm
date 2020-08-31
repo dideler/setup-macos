@@ -1,7 +1,6 @@
 #!/usr/bin/env bash -e
 
 npm install --global \
-  n \
   picture-tube \
   favicon-emoji \
   open-pip-cli \
