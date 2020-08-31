@@ -1,0 +1,22 @@
+#!/usr/bin/env bash -e
+
+source utils.sh
+
+# Elixir requires that Erlang be installed.
+asdf plugin-add erlang
+asdf plugin-add elixir
+
+if brew --prefix openssl > /dev/null; then
+  export ERLANG_OPENSSL_PATH="$(brew --prefix openssl)"
+fi
+
+# By default, the binary uses the oldest supported OTP release.
+# To install binaries with the latest supported OTP version,
+# append `otp-${OTP_MAJOR_VERSION}` to the elixir version.
+# E.g. `asdf install elixir 1.5.0-otp-20`
+#
+# For supported OTP versions by Elixir versions, see
+# https://hexdocs.pm/elixir/master/compatibility-and-deprecations.html#compatibility-between-elixir-and-erlang-otp
+
+asdf install erlang latest:23
+asdf install elixir 1.10.4-otp-23
