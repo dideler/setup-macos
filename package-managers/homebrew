@@ -9,7 +9,6 @@ brew update
 
 taps=(
   'homebrew/bundle'
-  'homebrew/dupes'
   'homebrew/services'
 )
 
@@ -52,7 +51,9 @@ formulas=(
   'gnutls'
   'go'
   'gobject-introspection'
+  'grep --with-default-names'
   'grep'
+  'gzip'
   'gzip'
   'heroku'
   'highlight'
@@ -65,7 +66,9 @@ formulas=(
   'jpeg'
   'jq'
   'less'
+  'less'
   'lzop'
+  'make --with-default-names'
   'make'
   'md5sha1sum'
   'moreutils'
@@ -80,30 +83,23 @@ formulas=(
   'readline'
   'redis'
   'rename'
-  'ripgrep'
   'ripgrep-all'
+  'ripgrep'
   'rsync'
+  'rsync'
+  'screen'
   'shellcheck'
   'the_silver_searcher'
   'tldr'
   'trash'
   'tree'
+  'unzip'
   'vim --override-system-vi --with-python3'
   'watch'
   'wget'
   'youtube-dl'
   # 'git-number' # TODO: Enable once aliases are set up.
-)
-
-dupes=(
-  'grep --with-default-names'
-  'less'
-  'make --with-default-names'
   # 'openssh' # Disabled because it lacks keychain support.
-  'rsync'
-  'screen'
-  'unzip'
-  'gzip'
 )
 
 casks=(
@@ -157,8 +153,4 @@ done
 
 for formula in "${formulas[@]}"; do
   eval "brew install ${formula}"
-done
-
-for dupe in "${dupes[@]}"; do
-  eval "brew install ${dupe}"
 done
