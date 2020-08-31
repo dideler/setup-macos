@@ -171,7 +171,10 @@ done
 # Use GNU commands without "g" prefix.
 
 grep -q "gnubin" ~/.bash_profile || \
-  echo 'PATH="/usr/local/opt/coreutils/libexec/gnubin:$PATH"' >> ~/.bash_profile
+  echo 'export PATH="/usr/local/opt/coreutils/libexec/gnubin:$PATH"' >> ~/.bash_profile
+
+grep -q "gnubin" ~/.zshrc || \
+  echo 'export PATH="/usr/local/opt/coreutils/libexec/gnubin:$PATH"' >> ~/.zshrc
 
 if is_available fish; then
   add_to_user_path "/usr/local/opt/coreutils/libexec/gnubin"
