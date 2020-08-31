@@ -1,9 +1,7 @@
 #!/usr/bin/env bash -e
 
-source utils.sh
-
 if [[ "$(uname)" != "Darwin" ]]; then
-  log_error 'This setup only runs on Mac machines'
+  echo 'This setup only runs on Mac machines'
   exit 1
 fi
 
@@ -40,4 +38,4 @@ pushd ~/github.com/dideler/setup-macos
   shells/fish &
 popd
 
-log_info "All done!"
+echo "All done!"
