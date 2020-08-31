@@ -80,6 +80,7 @@ formulas=(
   'rbenv'
   'rbenv-default-gems'
   'rbenv-gem-rehash'
+  'readline'
   'redis'
   'rename'
   'ripgrep'
