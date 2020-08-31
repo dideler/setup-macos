@@ -31,14 +31,13 @@ popd
 rm -rf ~/github.com/dideler/setup-macos
 git clone git@github.com:dideler/setup-macos.git ~/github.com/dideler/setup-macos
 pushd ~/github.com/dideler/setup-macos
-  # TODO: Some of these can probably run in parallel. And maybe use nohup?
-  settings/os-defaults \
-  && package-managers/homebrew \
-  && package-managers/asdf \
-  && languages/node \
-  && languages/ruby \
-  && languages/python3 \
-  && shells/fish
+  settings/os-defaults &
+  package-managers/homebrew
+  package-managers/asdf
+  languages/node &
+  languages/ruby &
+  languages/python3 &
+  shells/fish &
 popd
 
 log_info "All done!"
