@@ -3,7 +3,7 @@
 source utils.sh
 
 if ! [[ $(command -v brew) ]]; then
-  ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+  bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh)"
 fi
 
 brew analytics off
