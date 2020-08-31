@@ -1,6 +1,7 @@
 #!/usr/bin/env bash -e
 
+set --export RUBY_CONFIGURE_OPTS "--with-readline-dir=(brew --prefix readline)"
+
 asdf plugin-add ruby
 asdf install ruby latest
 asdf global ruby $(asdf latest ruby)
-
