@@ -1,3 +1,5 @@
 #!/usr/bin/env bash -e
 
+source utils.sh
+
 pip3 install --upgrade pip setuptools

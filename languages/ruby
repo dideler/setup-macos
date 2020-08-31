@@ -1,5 +1,7 @@
 #!/usr/bin/env bash -e
 
+source utils.sh
+
 if brew --prefix readline > /dev/null
   set --export RUBY_CONFIGURE_OPTS "$RUBY_CONFIGURE_OPTS --with-readline-dir=(brew --prefix readline)"
 end

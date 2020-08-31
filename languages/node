@@ -1,5 +1,7 @@
 #!/usr/bin/env bash -e
 
+source utils.sh
+
 asdf plugin-add nodejs
 asdf install nodejs latest
 asdf global nodejs $(asdf latest nodejs)

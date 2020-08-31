@@ -1,3 +1,5 @@
 #!/usr/bin/env bash -e
 
+source utils.sh
+
 chsh -s $(which fish)
