@@ -1,9 +1,0 @@
-#!/usr/bin/env bash -e
-
-npm install --global \
-  picture-tube \
-  favicon-emoji \
-  open-pip-cli \
-  fkill-cli \
-  imageoptim-cli \
-  git-mob@0.3.0

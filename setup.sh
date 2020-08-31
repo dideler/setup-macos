@@ -35,7 +35,6 @@ pushd ~/github.com/dideler/setup-macos
   && package-managers/asdf \
   && languages/node \
   && languages/ruby \
-  && package-managers/npm \
   && languages/python3 \
   && shells/fish
 popd
