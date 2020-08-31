@@ -1,5 +1,7 @@
 #!/usr/bin/env bash -e
 
+source utils.sh
+
 # Close open System Preferences panes to prevent them from overriding settings
 osascript -e 'tell application "System Preferences" to quit'
 
@@ -169,4 +171,4 @@ for app in "Dock" "Finder" "Google Chrome" "Google Chrome Canary" "Terminal"; do
   killall "${app}" &> /dev/null
 done
 
-echo "Done OS X configurations. Some changes require a logout/restart to take effect."
+log_info "Configured macOS settings. Some changes require a logout/restart to take effect."

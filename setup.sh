@@ -41,4 +41,4 @@ pushd ~/github.com/dideler/setup-macos
   && shells/fish
 popd
 
-echo "All done!"
+log_info "All done!"
