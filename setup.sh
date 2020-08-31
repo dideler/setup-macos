@@ -30,15 +30,15 @@ rm -rf ~/github.com/dideler/setup-macos
 git clone git@github.com:dideler/setup-macos.git ~/github.com/dideler/setup-macos
 pushd ~/github.com/dideler/setup-macos
   # TODO: Some of these can probably run in parallel. And maybe use nohup?
-  bash settings/os-defaults \
-  && bash package-managers/homebrew \
-  && bash package-managers/asdf \
-  && bash package-managers/npm \
-  && bash languages/node \
-  && bash languages/ruby \
-  && bash package-managers/gems \
-  && bash languages/python3 \
-  && bash shells/fish
+  settings/os-defaults \
+  && package-managers/homebrew \
+  && package-managers/asdf \
+  && languages/node \
+  && languages/ruby \
+  && package-managers/npm \
+  && package-managers/gems \
+  && languages/python3 \
+  && shells/fish
 popd
 
 echo "All done!"
