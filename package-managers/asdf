@@ -22,6 +22,11 @@ grep -q "source ~/.asdf/asdf.sh" ~/.bash_profile || \
 grep -q "source ~/.asdf/completions/asdf.bash" ~/.bash_profile || \
   echo "source ~/.asdf/completions/asdf.bash" >> ~/.bash_profile
 
+# Setup for zsh
+
+grep -q "source ~/.asdf/asdf.sh" ~/.zshrc || \
+  echo "source ~/.asdf/asdf.sh" >> ~/.zshrc
+
 # Setup for fish
 
 if is_available fish; then
