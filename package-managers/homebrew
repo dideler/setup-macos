@@ -34,7 +34,7 @@ formulas=(
   'fd'
   'ffmpeg --with-faac'
   'findomain'
-  'findutils --with-default-names'
+  'findutils'
   'fish'
   'fzf'
   'gawk'
@@ -44,16 +44,16 @@ formulas=(
   'gitleaks'
   'glow'
   'gnu-getopt'
-  'gnu-indent --with-default-names'
-  'gnu-sed --with-default-names'
-  'gnu-tar --with-default-names'
-  'gnu-time --with-default-names'
-  'gnu-units --with-default-names'
-  'gnu-which --with-default-names'
+  'gnu-indent'
+  'gnu-sed'
+  'gnu-tar'
+  'gnu-time'
+  'gnu-units'
+  'gnu-which'
   'gnutls'
   'go'
   'gobject-introspection'
-  'grep --with-default-names'
+  'grep'
   'grep'
   'gzip'
   'gzip'
@@ -70,7 +70,7 @@ formulas=(
   'less'
   'less'
   'lzop'
-  'make --with-default-names'
+  'make'
   'make'
   'md5sha1sum'
   'moreutils'
@@ -156,3 +156,12 @@ done
 for formula in "${formulas[@]}"; do
   eval "brew install ${formula}"
 done
+
+# Use GNU commands without "g" prefix.
+
+grep -q "gnubin" ~/.bash_profile || \
+  echo 'PATH="/usr/local/opt/coreutils/libexec/gnubin:$PATH"' >> ~/.bash_profile
+
+if is_available fish; then
+  add_to_user_path "/usr/local/opt/coreutils/libexec/gnubin"
+fi
