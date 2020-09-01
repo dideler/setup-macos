@@ -124,7 +124,7 @@ casks=(
   'firefox'
   'flux'
   'flycut'
-  'github-desktop'
+  'github'
   'google-chrome-canary'
   'google-chrome'
   'imageoptim'
