@@ -125,6 +125,7 @@ casks=(
   'flux'
   'flycut'
   'github'
+  'google-backup-and-sync'
   'google-chrome'
   'imageoptim'
   'insomnia'
