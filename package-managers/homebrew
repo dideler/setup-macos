@@ -181,5 +181,5 @@ grep -q "gnubin" ~/.zshrc || \
   echo 'export PATH="/usr/local/opt/coreutils/libexec/gnubin:$PATH"' >> ~/.zshrc
 
 if is_available fish; then
-  add_to_user_path "/usr/local/opt/coreutils/libexec/gnubin"
+  fish -c 'add_to_user_path "/usr/local/opt/coreutils/libexec/gnubin"'
 fi
