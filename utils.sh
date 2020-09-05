@@ -20,7 +20,15 @@ function on_error {
   if [[ $ERR_CONTEXT != "" ]]; then log_error "Context: $ERR_CONTEXT"; fi
 }
 
-function is_available() {
+function is_available {
   command -v "$1" >/dev/null
   return $?
+}
+
+function sudo_once {
+  # Ask for password upfront.
+  sudo -v
+
+  # Repeatedly update cached credentials until script exits.
+  while true; do sudo -v; sleep 60; kill -0 "$$" || exit; done 2>/dev/null &
 }
