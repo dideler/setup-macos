@@ -155,7 +155,6 @@ casks=(
   'vlc'
   'whatsapp'
   'xquartz'
-  # 'mongohub'
   # 'little-snitch'
   # 'dropbox' # Has issues with 2FA. Go to https://www.dropbox.com/install.
 )
