@@ -12,6 +12,7 @@ brew update
 taps=(
   'homebrew/bundle'
   'homebrew/services'
+  'heroku/brew'
 )
 
 formulas=(
