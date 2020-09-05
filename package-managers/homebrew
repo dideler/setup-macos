@@ -30,6 +30,7 @@ formulas=(
   'brotli'
   'cloc'
   'cmake'
+  'cmatrix'
   'colordiff'
   'coreutils'
   'ctags'
