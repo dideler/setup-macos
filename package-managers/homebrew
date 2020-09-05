@@ -6,6 +6,8 @@ if ! [[ $(command -v brew) ]]; then
   bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh)"
 fi
 
+sudo_once
+
 brew analytics off
 brew update
 
