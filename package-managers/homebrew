@@ -163,13 +163,14 @@ for tap in "${taps[@]}"; do
   brew tap "$tap"
 done
 
+for formula in "${formulas[@]}"; do
+  brew install --display-times "$formula"
+done
+
 for cask in "${casks[@]}"; do
   brew cask install "$cask" || true
 done
 
-for formula in "${formulas[@]}"; do
-  brew install "$formula"
-done
 
 # Use GNU commands without "g" prefix.
 
