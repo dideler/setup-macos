@@ -10,6 +10,7 @@ sudo_once
 
 brew analytics off
 brew update
+brew upgrade
 
 taps=(
   'homebrew/bundle'
