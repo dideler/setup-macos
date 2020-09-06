@@ -133,6 +133,7 @@ casks=(
   'google-backup-and-sync'
   'google-chrome'
   'google-earth-pro'
+  'iina'
   'imageoptim'
   'insomnia'
   'iterm2'
@@ -170,7 +171,6 @@ done
 for cask in "${casks[@]}"; do
   brew cask install "$cask" || true
 done
-
 
 # Use GNU commands without "g" prefix.
 
