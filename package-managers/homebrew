@@ -82,7 +82,6 @@ formulas=(
   'less'
   'lzop'
   'make'
-  'md5sha1sum'
   'monolith'
   'moreutils'
   'mosh'
