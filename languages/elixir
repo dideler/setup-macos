@@ -3,8 +3,12 @@
 source utils.sh
 
 # Elixir requires that Erlang be installed.
-asdf plugin-add erlang
-asdf plugin-add elixir
+asdf plugin-add erlang && erlang_status=$? || erlang_status=$?
+asdf plugin-add elixir && elixir_status=$? || elixir_status=$?
+
+# `asdf plugin-add` returns exit code 2 when plugin already installed, but it's not an error.
+[[ $erlang_status -ne 0 && $erlang_status -ne 2 ]] && exit $erlang_status
+[[ $elixir_status -ne 0 && $elixir_status -ne 2 ]] && exit $elixir_status
 
 if brew --prefix openssl > /dev/null; then
   export ERLANG_OPENSSL_PATH="$(brew --prefix openssl)"
