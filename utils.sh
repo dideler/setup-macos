@@ -25,10 +25,14 @@ function is_available {
   return $?
 }
 
+# Asks for password upfront with an optional info message.
+# Repeatedly updates cached credentials until script exits.
 function sudo_once {
-  # Ask for password upfront.
+  if [[ -n "$1" ]]; then
+    log_info "$1"
+  fi
+
   sudo -v
 
-  # Repeatedly update cached credentials until script exits.
   while true; do sudo -v; sleep 60; kill -0 "$$" || exit; done 2>/dev/null &
 }
