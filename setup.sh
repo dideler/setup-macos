@@ -40,6 +40,7 @@ pushd ~/github.com/dideler/setup-macos
   languages/ruby &
   languages/python &
   languages/elixir &
+  languages/go &
   shells/fish &
 popd
 
