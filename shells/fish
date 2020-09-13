@@ -4,7 +4,9 @@ source utils.sh
 
 fish_path=$(which fish)
 
-grep -q "fish" /etc/shells || \
+if ! grep -q "fish" /etc/shells; then
+  sudo_once "Password required to change default shell"
   echo "$fish_path" | sudo tee -a /etc/shells
+fi
 
 chsh -s "$fish_path"
