@@ -7,6 +7,8 @@ asdf plugin-add python && status=$? || status=$?
 # `asdf plugin-add` returns exit code 2 when plugin already installed, but it's not an error.
 [[ $status -ne 0 && $status -ne 2 ]] && exit $status
 
+asdf plugin update python
+
 asdf install python latest:2
 asdf install python latest:3
 asdf global python $(asdf latest python)
