@@ -117,6 +117,7 @@ brew bundle --force --verbose --no-lock --file=- <<-BUNDLE
   cask 'dash'
   cask 'devdocs'
   cask 'docker'
+  cask 'dropbox'
   cask 'firefox'
   cask 'flux'
   cask 'flycut'
@@ -148,7 +149,6 @@ brew bundle --force --verbose --no-lock --file=- <<-BUNDLE
   cask 'whatsapp'
   cask 'xquartz'
   # cask 'little-snitch'
-  # cask 'dropbox' # Has issues with 2FA. Go to https://www.dropbox.com/install.
 
   mas 'Discovery', id: 1381004916
 BUNDLE
