@@ -9,4 +9,8 @@ if ! grep -q "fish" /etc/shells; then
   echo "$fish_path" | sudo tee -a /etc/shells
 fi
 
-chsh -s "$fish_path"
+default_shell=$(dscl . -read ~/ UserShell | sed 's/UserShell: //')
+
+if [[ "$default_shell" != "$fish_path" ]]; then
+  chsh -s "$fish_path"
+fi
