@@ -149,6 +149,8 @@ brew bundle --force --verbose --no-lock --file=- <<-BUNDLE
   cask 'xquartz'
   # cask 'little-snitch'
   # cask 'dropbox' # Has issues with 2FA. Go to https://www.dropbox.com/install.
+
+  mas 'Discovery', id: 1381004916
 BUNDLE
 
 # Use GNU commands without "g" prefix.
