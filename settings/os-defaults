@@ -2,7 +2,7 @@
 
 source utils.sh
 
-sudo_once
+sudo_once "Password required to change certain system settings"
 
 # Close open System Preferences panes to prevent them from overriding settings
 osascript -e 'tell application "System Preferences" to quit'
