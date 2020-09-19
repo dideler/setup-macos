@@ -153,6 +153,7 @@ brew bundle --force --verbose --no-lock --file=- <<-BUNDLE
   # cask 'little-snitch'
 
   mas 'Discovery', id: 1381004916
+  mas 'Xcode', id: 497799835
 BUNDLE
 
 # Use GNU commands without "g" prefix.
