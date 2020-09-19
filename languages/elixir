@@ -25,5 +25,10 @@ fi
 # For supported OTP versions by Elixir versions, see
 # https://hexdocs.pm/elixir/master/compatibility-and-deprecations.html#compatibility-between-elixir-and-erlang-otp
 
+# Disable warning as error for implicit function declaration.
+# Prevents Erlang 23.0.{2,3,4} from being compiled.
+# https://github.com/asdf-vm/asdf-erlang/issues/164
+export CFLAGS="-O2 -Wno-error=implicit-function-declaration"
+
 asdf install erlang latest:23
 asdf install elixir 1.10.4-otp-23
