@@ -39,6 +39,7 @@ brew bundle --force --verbose --no-lock --file=- <<-BUNDLE
   brew 'eva'
   brew 'exa'
   brew 'fd'
+  brew 'fff'
   brew 'ffmpeg'
   brew 'findomain'
   brew 'findutils'
