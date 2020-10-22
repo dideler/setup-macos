@@ -108,6 +108,7 @@ brew bundle --force --verbose --no-lock --file=- <<-BUNDLE
   brew 'unzip'
   brew 'vim'
   brew 'watch'
+  brew 'watchexec' # Also see https://github.com/dideler/watcher
   brew 'wget'
   brew 'youtube-dl'
 
