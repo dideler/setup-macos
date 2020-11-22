@@ -138,7 +138,7 @@ brew bundle --force --verbose --no-lock --file=- <<-BUNDLE
   cask 'kap'
   cask 'keybase'
   cask 'lepton'
-  cask 'mactex'
+  # cask 'mactex' # mactex is a very big all-in-one solution; consider basictex
   cask 'ngrok'
   cask 'obsidian'
   cask 'pgadmin4'
