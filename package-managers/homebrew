@@ -107,6 +107,7 @@ brew bundle --force --verbose --no-lock --file=- <<-BUNDLE
   brew 'tree'
   brew 'unzip'
   brew 'vim'
+  brew 'vips'
   brew 'watch'
   brew 'watchexec' # Also see https://github.com/dideler/watcher
   brew 'wget'
