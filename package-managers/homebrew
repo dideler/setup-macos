@@ -63,6 +63,7 @@ brew bundle --force --verbose --no-lock --file=- <<-BUNDLE
   brew 'gnu-time'
   brew 'gnu-units'
   brew 'gnu-which'
+  brew 'gnupg'
   brew 'gnutls'
   brew 'go'
   brew 'gobject-introspection'
