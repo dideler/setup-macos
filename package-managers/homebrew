@@ -144,7 +144,6 @@ brew bundle --force --verbose --no-lock --file=- <<-BUNDLE
   cask 'kap'
   cask 'keybase'
   cask 'lepton'
-  # cask 'mactex' # mactex is a very big all-in-one solution; consider basictex
   cask 'ngrok'
   cask 'obsidian'
   cask 'pgadmin4'
@@ -156,14 +155,18 @@ brew bundle --force --verbose --no-lock --file=- <<-BUNDLE
   cask 'rowanj-gitx'
   cask 'skype'
   cask 'slack'
-  # cask 'spectacle' # replaced by rectangle
   cask 'spotify'
   cask 'telegram'
   cask 'visual-studio-code'
   cask 'vlc'
   cask 'whatsapp'
   cask 'xquartz'
+  # cask 'youtube-dl-gui'
+  # cask 'mactex' # mactex is a very big all-in-one solution; consider basictex
   # cask 'little-snitch'
+  # cask 'spectacle' # replaced by rectangle
+  # cask 'sonic-robo-blast-2-kart'
+  # cask 'sonic-robo-blast-2'
 
   mas 'Discovery', id: 1381004916
 BUNDLE
