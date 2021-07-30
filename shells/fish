@@ -1,4 +1,4 @@
-#!/usr/bin/env bash -e
+#!/usr/bin/env bash -e -o pipefail
 
 source utils.sh
 
@@ -16,8 +16,8 @@ if [[ "$default_shell" != "$fish_path" ]]; then
 fi
 
 # Install a fish package manager
-curl -sL https://git.io/fisher | source &&
-  fisher install jorgebucaran/fisher &&
-  fisher update # Installs fish_plugins from dotfiles
+curl -sL https://git.io/fisher | source
+fisher install jorgebucaran/fisher
+fisher update # Installs fish_plugins from dotfiles
 
 log_info "Installed fish and packages."
