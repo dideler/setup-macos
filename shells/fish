@@ -15,9 +15,7 @@ if [[ "$default_shell" != "$fish_path" ]]; then
   chsh -s "$fish_path"
 fi
 
-# Install a fish package manager
-curl -sL https://git.io/fisher | source
-fisher install jorgebucaran/fisher
-fisher update # Installs fish_plugins from dotfiles
+# Install a fish package manager and plugins from fish_plugins.
+fish -c "curl -sL https://git.io/fisher | source && fisher install jorgebucaran/fisher && fisher update"
 
 log_info "Installed fish and packages."
