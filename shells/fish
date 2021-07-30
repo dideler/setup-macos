@@ -14,3 +14,8 @@ default_shell=$(dscl . -read ~/ UserShell | sed 's/UserShell: //')
 if [[ "$default_shell" != "$fish_path" ]]; then
   chsh -s "$fish_path"
 fi
+
+# Install a fish package manager
+curl -sL https://git.io/fisher | source &&
+  fisher install jorgebucaran/fisher &&
+  fisher update # Installs fish_plugins from dotfiles
