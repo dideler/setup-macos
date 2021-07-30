@@ -13,4 +13,4 @@ asdf install golang latest
 asdf global golang $(asdf latest golang)
 
 log_info "Installed Go."
-log_info "Remember to run `asdf reshim golang` after `go get` to setup shims for a package."
+log_info "Remember to run 'asdf reshim golang' after 'go get' to setup shims for a package."
