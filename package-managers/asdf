@@ -23,8 +23,6 @@ grep -q "source ~/.asdf/asdf.sh" ~/.bashrc || \
 grep -q "source ~/.asdf/completions/asdf.bash" ~/.bashrc || \
   echo "source ~/.asdf/completions/asdf.bash" >> ~/.bashrc
 
-source ~/.bashrc
-
 # Setup for zsh
 grep -q "source ~/.asdf/asdf.sh" ~/.zshrc || \
   echo "source ~/.asdf/asdf.sh" >> ~/.zshrc

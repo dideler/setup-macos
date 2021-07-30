@@ -1,6 +1,6 @@
 #!/usr/bin/env bash -e
 
-source utils.sh
+source utils.sh && source ~/.bashrc
 
 asdf plugin-add nodejs && status=$? || status=$?
 
