@@ -4,15 +4,17 @@ source utils.sh
 
 # Install latest asdf version
 
-remote="https://github.com/asdf-vm/asdf.git"
+if [[ ! -d ~/.asdf ]]; then
+  remote="https://github.com/asdf-vm/asdf.git"
 
-latest_tag=$(
-  git ls-remote --tags --exit-code --refs "$remote" | \
-  sed -E 's/^[[:xdigit:]]+[[:space:]]+refs\/tags\/(.+)/\1/g' | \
-  tail -n1
-)
+  latest_tag=$(
+    git ls-remote --tags --exit-code --refs "$remote" | \
+    sed -E 's/^[[:xdigit:]]+[[:space:]]+refs\/tags\/(.+)/\1/g' | \
+    tail -n1
+  )
 
-git clone "$remote" --depth 1 --branch "$latest_tag" ~/.asdf || true
+  git clone "$remote" --depth 1 --branch "$latest_tag" ~/.asdf
+fi
 
 # Setup for bash
 grep -q "source ~/.asdf/asdf.sh" ~/.bashrc || \
