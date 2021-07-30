@@ -1,0 +1,13 @@
+#!/usr/bin/env bash -e -o pipefail
+
+source utils.sh
+
+function is_sudo_touch_enabled {
+  grep -Eq '^auth\s.*\spam_tid\.so$' /etc/pam.d/sudo
+}
+
+if [[ ! is_sudo_touch_enabled ]]; then
+  # Add "pam_tid.so" as first authentication method
+  new_sudo=$(awk 'fixed||!/^auth /{print} !fixed&&/^auth/{print "auth       sufficient     pam_tid.so";print;fixed=1}' /etc/pam.d/sudo)
+  sudo tee /etc/pam.d/sudo <<< "$new_sudo"
+fi
