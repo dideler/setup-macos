@@ -5,7 +5,6 @@ source utils.sh
 fish_path=$(which fish)
 
 if ! grep -q "fish" /etc/shells; then
-  sudo_once "sudo required to change default shell"
   echo "$fish_path" | sudo tee -a /etc/shells
 fi
 

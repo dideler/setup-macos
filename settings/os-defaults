@@ -1,6 +1,6 @@
 #!/usr/bin/env bash -e
 
-source utils.sh && sudo_once
+source utils.sh
 
 # Close open System Preferences panes to prevent them from overriding settings
 osascript -e 'tell application "System Preferences" to quit'
