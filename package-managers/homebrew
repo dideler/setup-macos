@@ -148,7 +148,6 @@ brew bundle --force --verbose --no-lock --file=- <<-BUNDLE
   cask 'physics-101' # SIZ9NKLYAS
   cask 'postico'
   cask 'postman'
-  cask 'psequel'
   cask 'rectangle'
   cask 'rowanj-gitx'
   cask 'skype'
