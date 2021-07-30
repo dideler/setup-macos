@@ -36,5 +36,5 @@ function sudo_once {
   sudo -v && status=$? || status=$?
   [[ $status -ne 0 ]] && return $status
 
-  while true; do sudo -v; sleep 60; kill -0 "$$" || exit; done 2>/dev/null &
+  while true; do sudo -v; sleep 30; kill -0 "$$" || exit; done 2>/dev/null &
 }
