@@ -15,3 +15,5 @@ asdf global python $(asdf latest python) $(asdf list all python 2.7 | tail -1)
 
 pip2 install --upgrade pip setuptools
 pip3 install --upgrade pip setuptools
+
+log_info "Installed Python."

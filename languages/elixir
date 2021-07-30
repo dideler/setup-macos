@@ -32,3 +32,5 @@ export CFLAGS="-O2 -Wno-error=implicit-function-declaration"
 
 asdf install erlang latest:23
 asdf install elixir 1.10.4-otp-23
+
+log_info "Installed Elixir."

@@ -11,3 +11,5 @@ if [[ ! is_sudo_touch_enabled ]]; then
   new_sudo=$(awk 'fixed||!/^auth /{print} !fixed&&/^auth/{print "auth       sufficient     pam_tid.so";print;fixed=1}' /etc/pam.d/sudo)
   sudo tee /etc/pam.d/sudo <<< "$new_sudo"
 fi
+
+log_info "Configured touch id for sudo."

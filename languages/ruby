@@ -19,3 +19,5 @@ asdf plugin update ruby
 
 asdf install ruby latest
 asdf global ruby $(asdf latest ruby)
+
+log_info "Installed Ruby."

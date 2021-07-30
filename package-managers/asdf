@@ -39,3 +39,5 @@ if is_available fish; then
 
   mkdir -p ~/.config/fish/completions && ln -s ~/.asdf/completions/asdf.fish ~/.config/fish/completions
 fi
+
+log_info "Installed asdf."

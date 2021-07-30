@@ -179,3 +179,5 @@ grep -q "gnubin" ~/.zshrc || \
 if is_available fish; then
   fish -c 'add_to_user_path "/usr/local/opt/coreutils/libexec/gnubin"'
 fi
+
+log_info "Installed homebrew and packages."

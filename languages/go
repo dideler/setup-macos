@@ -12,4 +12,5 @@ asdf plugin update golang
 asdf install golang latest
 asdf global golang $(asdf latest golang)
 
-# After using `go get` to install a package, run `asdf reshim golang` to get any new shims.
+log_info "Installed Go."
+log_info "Remember to run `asdf reshim golang` after `go get` to setup shims for a package."
