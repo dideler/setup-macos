@@ -33,6 +33,7 @@ popd
 rm -rf ~/github.com/dideler/setup-macos
 git clone git@github.com:dideler/setup-macos.git ~/github.com/dideler/setup-macos
 pushd ~/github.com/dideler/setup-macos
+  source utils.sh && sudo_once "Password required for certain installs..."
   settings/os-defaults &
   package-managers/homebrew
   package-managers/asdf
