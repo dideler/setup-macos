@@ -26,13 +26,15 @@ function is_available {
 }
 
 # Asks for password upfront with an optional info message.
-# Repeatedly updates cached credentials until script exits.
+# If password attempts fails, returns failure exit status.
+# Else repeatedly updates cached credentials until script exits.
 function sudo_once {
   if [[ -n "$1" ]]; then
     log_info "$1"
   fi
 
-  sudo -v
+  sudo -v && status=$? || status=$?
+  [[ $status -ne 0 ]] && return $status
 
   while true; do sudo -v; sleep 60; kill -0 "$$" || exit; done 2>/dev/null &
 }
