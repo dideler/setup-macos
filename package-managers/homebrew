@@ -116,6 +116,7 @@ brew bundle --force --verbose --no-lock --file=- <<-BUNDLE
   brew 'youtube-dl'
 
   cask '1password'
+  cask 'aerial'
   cask 'alfred'
   cask 'atom'
   cask 'avibrazil-rdm'
