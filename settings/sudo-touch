@@ -2,9 +2,17 @@
 
 source utils.sh
 
+function is_touch_id_supported {
+  test -f /usr/lib/pam/pam_tid.so.2
+}
+
 function is_sudo_touch_enabled {
   grep -Eq '^auth\s.*\spam_tid\.so$' /etc/pam.d/sudo
 }
+
+if ! is_touch_id_supported; then
+  exit 0
+fi
 
 if ! is_sudo_touch_enabled; then
   # Add "pam_tid.so" as first authentication method
