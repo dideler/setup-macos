@@ -57,11 +57,11 @@ defaults write -g AppleLocale -string "en_GB@currency=GBP"
 defaults write -g AppleMeasurementUnits -string "Centimeters"
 defaults write -g AppleMetricUnits -bool true
 
-# Hot corner: Top right screen corner → Screen saver
-defaults write com.apple.dock wvous-tr-corner -int 5
-defaults write com.apple.dock wvous-tr-modifier -int 0
+# Hot corner: Bottom left → Screen saver
+defaults write com.apple.dock wvous-bl-corner -int 5
+defaults write com.apple.dock wvous-bl-modifier -int 0
 
-# Hot corner: Bottom right screen corner → Sleep screen
+# Hot corner: Bottom right → Sleep screen
 defaults write com.apple.dock wvous-br-corner -int 10
 defaults write com.apple.dock wvous-br-modifier -int 0
 
