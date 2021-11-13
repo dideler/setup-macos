@@ -15,9 +15,6 @@ sudo systemsetup -setrestartfreeze on
 # Requires temporarily disabling System Integrity Protection!
 # sudo chmod 600 /System/Library/CoreServices/Search.bundle/Contents/MacOS/Search
 
-# Disable Notification Center and remove the menu bar icon
-launchctl unload -w /System/Library/LaunchAgents/com.apple.notificationcenterui.plist 2> /dev/null
-
 # Disable smart quotes as they're annoying when typing code
 defaults write -g NSAutomaticQuoteSubstitutionEnabled -bool false
 
