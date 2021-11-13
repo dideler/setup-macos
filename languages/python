@@ -9,11 +9,9 @@ asdf plugin-add python && status=$? || status=$?
 
 asdf plugin update python
 
-asdf install python latest:2
 asdf install python latest:3
-asdf global python $(asdf latest python) $(asdf list all python 2.7 | tail -1)
+asdf global python $(asdf latest python)
 
-pip2 install --upgrade pip setuptools
 pip3 install --upgrade pip setuptools
 
 log_info "Installed Python."
