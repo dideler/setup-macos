@@ -17,4 +17,8 @@ pip3 install --upgrade pip setuptools
 python3 -m pip install --upgrade --user pipx
 python3 -m pipx ensurepath
 
+if is_available fish; then
+  fish -c 'add_to_user_path "$HOME/.local/bin"' # pipx install path, set via --user
+fi
+
 log_info "Installed Python."
