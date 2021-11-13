@@ -5,3 +5,6 @@ source utils.sh
 softwareupdate --list
 softwareupdate --install --recommended
 
+if [[ $(uname -p) == 'arm' ]]; then
+  softwareupdate --install-rosetta
+fi
