@@ -52,7 +52,7 @@ defaults write -g KeyRepeat -int 2
 defaults write -g InitialKeyRepeat -int 15
 
 # Set language and text formats
-defaults write -g AppleLanguages -array "en" "nl"
+defaults write -g AppleLanguages -array "en" "nl" "es"
 defaults write -g AppleLocale -string "en_GB@currency=GBP"
 defaults write -g AppleMeasurementUnits -string "Centimeters"
 defaults write -g AppleMetricUnits -bool true
