@@ -1,0 +1,7 @@
+#!/usr/bin/env bash -e
+
+source utils.sh
+
+softwareupdate --list
+softwareupdate --install --recommended
+

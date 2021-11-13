@@ -35,6 +35,7 @@ git clone git@github.com:dideler/setup-macos.git ~/github.com/dideler/setup-maco
 pushd ~/github.com/dideler/setup-macos
   source utils.sh && sudo_once "Password required for certain installs..."
   settings/sudo-touch &
+  settings/softwareupdate &
   settings/os-defaults &
   package-managers/homebrew
   package-managers/asdf
