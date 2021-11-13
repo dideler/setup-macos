@@ -47,9 +47,6 @@ defaults write com.apple.LaunchServices LSQuarantine -bool false
 # Reveal IP address, hostname, OS version, etc. when clicking the clock in the login window
 sudo defaults write /Library/Preferences/com.apple.loginwindow AdminHostInfo HostName
 
-# Check for software updates daily, not just once per week
-# defaults write com.apple.SoftwareUpdate ScheduleFrequency -int 1
-
 # Disable press-and-hold for keys (e.g. accented characters) in favour of key repeat
 defaults write -g ApplePressAndHoldEnabled -bool false
 
