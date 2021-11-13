@@ -14,4 +14,7 @@ asdf global python $(asdf latest python)
 
 pip3 install --upgrade pip setuptools
 
+python3 -m pip install --upgrade --user pipx
+python3 -m pipx ensurepath
+
 log_info "Installed Python."
