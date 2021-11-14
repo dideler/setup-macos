@@ -181,8 +181,8 @@ grep -q "gnubin" ~/.zshrc || \
   echo 'export PATH="/usr/local/opt/coreutils/libexec/gnubin:$PATH"' >> ~/.zshrc
 
 if is_available fish; then
-  fish -c 'add_to_user_path "/usr/local/opt/coreutils/libexec/gnubin"'
-  fish -c 'add_to_user_path "/opt/homebrew/bin/"'
+  fish -c 'set --universal fish_user_paths /usr/local/opt/coreutils/libexec/gnubin $fish_user_paths'
+  fish -c 'set --universal fish_user_paths /opt/homebrew/bin/ $fish_user_paths'
 fi
 
 log_info "Installed homebrew and packages."
