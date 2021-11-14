@@ -34,17 +34,17 @@ rm -rf ~/github.com/dideler/setup-macos
 git clone git@github.com:dideler/setup-macos.git ~/github.com/dideler/setup-macos
 pushd ~/github.com/dideler/setup-macos
   source utils.sh && sudo_once "Password required for certain installs..."
-  settings/sudo-touch &
-  settings/os-defaults &
-  package-managers/softwareupdate &
-  package-managers/homebrew
-  package-managers/asdf
-  languages/node &
-  languages/ruby &
-  languages/python &
-  languages/elixir &
-  languages/go &
-  shells/fish &
+  bash settings/sudo-touch
+  bash settings/os-defaults
+  bash package-managers/softwareupdate
+  bash package-managers/homebrew
+  bash package-managers/asdf
+  bash languages/node
+  bash languages/ruby
+  bash languages/python
+  bash languages/elixir
+  bash languages/go
+  bash shells/fish
 popd
 
-wait && echo "All done!"
+echo "All done!"
