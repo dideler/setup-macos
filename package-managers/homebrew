@@ -135,6 +135,7 @@ brew bundle --force --verbose --no-lock --file=- <<-BUNDLE
   cask 'flycut'
   cask 'github'
   cask 'google-chrome'
+  cask 'google-drive'
   cask 'google-earth-pro'
   cask 'hiddenbar'
   cask 'iina'
@@ -161,12 +162,12 @@ brew bundle --force --verbose --no-lock --file=- <<-BUNDLE
   cask 'visual-studio-code'
   cask 'whatsapp'
   cask 'xquartz'
-  # cask 'youtube-dl-gui'
-  # cask 'mactex' # mactex is a very big all-in-one solution; consider basictex
   # cask 'little-snitch'
-  # cask 'spectacle' # replaced by rectangle
-  # cask 'sonic-robo-blast-2-kart'
+  # cask 'mactex' # mactex is a very big all-in-one solution; consider basictex
   # cask 'sonic-robo-blast-2'
+  # cask 'sonic-robo-blast-2-kart'
+  # cask 'spectacle' # replaced by rectangle
+  # cask 'vlc'
 
   mas 'Discovery', id: 1381004916
 BUNDLE
