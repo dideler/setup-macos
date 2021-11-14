@@ -2,9 +2,8 @@
 
 source utils.sh
 
-softwareupdate --list
-softwareupdate --install --recommended
+softwareupdate --install --recommended --agree-to-license
 
 if [[ $(uname -p) == 'arm' ]]; then
-  echo 'A' | softwareupdate --install-rosetta
+  softwareupdate --install-rosetta --agree-to-license
 fi
