@@ -37,6 +37,7 @@ brew bundle --force --verbose --no-lock --file=- <<-BUNDLE
   brew 'direnv'
   brew 'dog'
   brew 'dos2unix'
+  brew 'duf'
   brew 'eva'
   brew 'exa'
   brew 'fd'
