@@ -109,6 +109,7 @@ brew bundle --force --verbose --no-lock --file=- <<-BUNDLE
   brew 'tldr'
   brew 'trash'
   brew 'tree'
+  brew 'unrar'
   brew 'unzip'
   brew 'vim'
   brew 'vips'
