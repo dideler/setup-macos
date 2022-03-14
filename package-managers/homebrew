@@ -151,6 +151,7 @@ brew bundle --force --verbose --no-lock --file=- <<-BUNDLE
   cask 'lepton'
   cask 'ngrok'
   cask 'obsidian'
+  cask 'osquery'
   cask 'paw'
   cask 'pgadmin4'
   cask 'physics-101' # SIZ9NKLYAS
