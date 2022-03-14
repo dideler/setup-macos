@@ -16,7 +16,7 @@ xcode-select -p 1>/dev/null || xcode-select --install
 if [[ ! -f ~/.ssh/id_rsa ]]; then
   ssh-keygen -t rsa -b 4096 -C "ideler.dennis@gmail.com"
   eval "$(ssh-agent -s)"
-  ssh-add -K ~/.ssh/id_rsa
+  ssh-add --apple-use-keychain ~/.ssh/id_rsa
   pbcopy < ~/.ssh/id_rsa.pub
   open https://github.com/settings/keys
   read -p "Copied public SSH key. Add to GitHub then press Enter to continue..."
