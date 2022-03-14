@@ -22,6 +22,11 @@ if [[ ! -f ~/.ssh/id_rsa ]]; then
   read -p "Copied public SSH key. Add to GitHub then press Enter to continue..."
 fi
 
+# Verify host key to prevent MITM attack
+echo "== GitHub's SSH key fingerprints (compare when connecting to host) =="
+curl -sSL https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/githubs-ssh-key-fingerprints | grep --only-matching "<li><code>SHA256.*</li>" | sed 's/<[^>]*>//g'
+ssh -T git@github.com
+
 mkdir -p ~/github.com
 
 rm -rf ~/github.com/dideler/dotfiles
