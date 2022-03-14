@@ -12,9 +12,10 @@ Also check out the [macOS Security and Privacy Guide][macos-guide]. For example:
 - enable FileVault 
 - disable crash reports & usage analytics
 - disable iCloud files
+- disable Spotlight suggestions and sensitive indexes
 - enable Firewall
+- enable Secure Keyboard Entry in Terminal
 - change computer & host name
-- disable Spotlight suggestions
 - set up GPG key
 
 Disclaimers:
