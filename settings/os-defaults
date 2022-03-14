@@ -74,8 +74,11 @@ defaults write com.apple.finder ShowStatusBar -bool true
 # Finder: Show path bar
 defaults write com.apple.finder ShowPathbar -bool true
 
-# Finder: Show hidden files by default
-# defaults write com.apple.finder AppleShowAllFiles -bool true
+# Finder: Show hidden files
+defaults write com.apple.finder AppleShowAllFiles -bool true
+
+# Finder: Show Library directory
+chflags nohidden ~/Library
 
 # Finder: Set Desktop as the default location for new Finder windows
 # For other paths, use `PfLo` and `file:///full/path/here/`
@@ -147,6 +150,10 @@ defaults write org.x.X11 wm_ffm -bool true
 # Chrome & Canary: Disable the all too sensitive backswipe on trackpads
 # defaults write com.google.Chrome AppleEnableSwipeNavigateWithScrolls -bool false
 # defaults write com.google.Chrome.canary AppleEnableSwipeNavigateWithScrolls -bool false
+
+# Lock screen as soon as screensaver starts
+defaults write com.apple.screensaver askForPassword -int 1
+defaults write com.apple.screensaver askForPasswordDelay -int 0
 
 # Restart some of the affected apps
 for app in "Dock" "Finder"; do
