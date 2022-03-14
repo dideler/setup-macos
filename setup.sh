@@ -12,7 +12,7 @@ done
 # Install Command Line Tools if not yet installed.
 xcode-select -p 1>/dev/null || xcode-select --install
 
-# Set up SSH key if none exists
+# Set up SSH key if none exists and authenticate with GitHub
 if [[ ! -f ~/.ssh/id_rsa ]]; then
   ssh-keygen -t rsa -b 4096 -C "ideler.dennis@gmail.com"
   eval "$(ssh-agent -s)"
@@ -20,12 +20,12 @@ if [[ ! -f ~/.ssh/id_rsa ]]; then
   pbcopy < ~/.ssh/id_rsa.pub
   open https://github.com/settings/keys
   read -p "Copied public SSH key. Add to GitHub then press Enter to continue..."
+  
+  # Verify host key to prevent MITM attack
+  echo "== GitHub's SSH key fingerprints (compare when connecting to host) =="
+  curl -sSL https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/githubs-ssh-key-fingerprints | grep --only-matching "<li><code>SHA256.*</li>" | sed 's/<[^>]*>//g'
+  ssh -T git@github.com | true
 fi
-
-# Verify host key to prevent MITM attack
-echo "== GitHub's SSH key fingerprints (compare when connecting to host) =="
-curl -sSL https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/githubs-ssh-key-fingerprints | grep --only-matching "<li><code>SHA256.*</li>" | sed 's/<[^>]*>//g'
-ssh -T git@github.com
 
 mkdir -p ~/github.com
 
