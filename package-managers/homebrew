@@ -14,6 +14,7 @@ brew update
 brew bundle --force --verbose --no-lock --file=- <<-BUNDLE
   tap 'homebrew/services'
   tap 'heroku/brew'
+  tap 'zph/homebrew-cervezas' # for pdftk
 
   brew 'airshare'
   brew 'argon2'
@@ -90,6 +91,7 @@ brew bundle --force --verbose --no-lock --file=- <<-BUNDLE
   brew 'ncdu'
   brew 'neovim'
   brew 'openssl'
+  brew 'pdftk'
   brew 'pgcli'
   brew 'pngquant'
   brew 'poppler'
@@ -118,9 +120,6 @@ brew bundle --force --verbose --no-lock --file=- <<-BUNDLE
   brew 'wget'
   brew 'youtube-dl'
   brew 'yq'
-
-  # Custom formulae
-  brew 'https://github.com/zph/homebrew-cervezas/blob/master/pdftk.rb'
 
   cask '1password'
   cask 'aerial'
