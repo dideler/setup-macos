@@ -119,6 +119,9 @@ brew bundle --force --verbose --no-lock --file=- <<-BUNDLE
   brew 'youtube-dl'
   brew 'yq'
 
+  # Custom formulae
+  brew 'https://github.com/zph/homebrew-cervezas/blob/master/pdftk.rb'
+
   cask '1password'
   cask 'aerial'
   cask 'alfred'
