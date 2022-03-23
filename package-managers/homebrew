@@ -188,7 +188,7 @@ grep -q "gnubin" ~/.bash_profile || \
 grep -q "gnubin" ~/.zshrc || \
   echo 'export PATH="/usr/local/opt/coreutils/libexec/gnubin:$PATH"' >> ~/.zshrc
 
-if is_available fish; then
+if is_available fish && echo "$PATH" | grep -qv "gnubin"; then
   fish -c 'set --universal fish_user_paths /usr/local/opt/coreutils/libexec/gnubin $fish_user_paths'
   fish -c 'set --universal fish_user_paths /opt/homebrew/bin/ $fish_user_paths'
 fi
