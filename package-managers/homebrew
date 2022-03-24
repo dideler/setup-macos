@@ -135,6 +135,7 @@ brew bundle --force --verbose --no-lock --file=- <<-BUNDLE
   cask 'devdocs'
   cask 'docker'
   cask 'dropbox'
+  cask 'fig'
   cask 'finicky'
   cask 'firefox'
   cask 'flux'
