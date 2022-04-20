@@ -92,6 +92,7 @@ brew bundle --force --verbose --no-lock --file=- <<-BUNDLE
   brew 'ncdu'
   brew 'neovim'
   brew 'openssl'
+  brew 'pandoc'
   brew 'pdftk'
   brew 'pgcli'
   brew 'pngquant'
