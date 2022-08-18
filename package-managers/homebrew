@@ -15,7 +15,9 @@ brew bundle --force --verbose --no-lock --file=- <<-BUNDLE
   tap 'homebrew/services'
   tap 'heroku/brew'
   tap 'zph/homebrew-cervezas' # for pdftk
+  tap 'tarkah/tickrs'
 
+  brew 'achannarasappa/tap/ticker'
   brew 'airshare'
   brew 'argon2'
   brew 'autoconf'
