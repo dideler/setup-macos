@@ -80,6 +80,7 @@ brew bundle --force --verbose --no-lock --file=- <<-BUNDLE
   brew 'highlight'
   brew 'htop-osx'
   brew 'httpie'
+  brew 'httrack'
   brew 'imagemagick'
   brew 'insect'
   brew 'java'
