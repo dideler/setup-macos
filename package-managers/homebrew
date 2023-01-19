@@ -101,6 +101,7 @@ brew bundle --force --verbose --no-lock --file=- <<-BUNDLE
   brew 'pandoc'
   brew 'pdftk'
   brew 'pgcli'
+  brew 'plz-cli'
   brew 'pngquant'
   brew 'poppler'
   brew 'postgresql'
