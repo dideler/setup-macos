@@ -142,6 +142,7 @@ brew bundle --force --verbose --no-lock --file=- <<-BUNDLE
   cask 'avibrazil-rdm'
   cask 'balenaetcher'
   cask 'brave-browser'
+  cask 'buzz'
   cask 'caffeine'
   cask 'cloudflare-warp'
   cask 'copyq'
