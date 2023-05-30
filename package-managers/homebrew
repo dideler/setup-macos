@@ -53,6 +53,7 @@ brew bundle --force --verbose --no-lock --file=- <<-BUNDLE
   brew 'findomain'
   brew 'findutils'
   brew 'fish'
+  brew 'fselect'
   brew 'fx'
   brew 'fzf'
   brew 'gawk'
