@@ -139,7 +139,6 @@ brew bundle --force --verbose --no-lock --file=- <<-BUNDLE
   cask '1password-cli'
   cask 'aerial'
   cask 'alfred'
-  cask 'atom'
   cask 'avibrazil-rdm'
   cask 'balenaetcher'
   cask 'brave-browser'
