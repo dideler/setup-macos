@@ -132,7 +132,7 @@ brew bundle --force --verbose --no-lock --file=- <<-BUNDLE
   brew 'watchexec' # Also see https://github.com/dideler/watcher
   brew 'waybackpy'
   brew 'wget'
-  brew 'youtube-dl'
+  brew 'yt-dlp' # Replaces youtube-dl which became unsupported after v2021.12.17
   brew 'yq'
 
   cask '1password'
