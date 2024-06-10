@@ -33,6 +33,7 @@ brew bundle --force --verbose --no-lock --file=- <<-BUNDLE
   brew 'colordiff'
   brew 'coreutils'
   brew 'csvkit'
+  brew 'csvlens'
   brew 'csvq'
   brew 'ctags'
   brew 'curl'
