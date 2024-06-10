@@ -101,6 +101,7 @@ brew bundle --force --verbose --no-lock --file=- <<-BUNDLE
   brew 'mosh'
   brew 'ncdu'
   brew 'neovim'
+  brew 'nvtop'
   brew 'openssl'
   brew 'p7zip'
   brew 'pandoc'
