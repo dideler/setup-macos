@@ -40,6 +40,7 @@ brew bundle --force --verbose --no-lock --file=- <<-BUNDLE
   brew 'diff-pdf'
   brew 'diff-so-fancy'
   brew 'direnv'
+  brew 'displayplacer'
   brew 'docx2txt'
   brew 'dog'
   brew 'dos2unix'
