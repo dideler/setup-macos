@@ -162,7 +162,7 @@ brew bundle --force --verbose --no-lock --file=- <<-BUNDLE
   cask 'github'
   cask 'google-chrome'
   cask 'google-drive'
-  cask 'google-earth-pro'
+  cask 'google-earth-pro', require_sha: false
   cask 'hiddenbar'
   cask 'iina'
   cask 'imageoptim'
