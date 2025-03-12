@@ -2,23 +2,31 @@
 
 source utils.sh && source ~/.bashrc
 
-asdf plugin-add python && status=$? || status=$?
-
-# `asdf plugin-add` returns exit code 2 when plugin already installed, but it's not an error.
-[[ $status -ne 0 && $status -ne 2 ]] && exit $status
-
+asdf plugin add python
 asdf plugin update python
 
+asdf install python latest:2
 asdf install python latest:3
-asdf global python $(asdf latest python)
+
+latest=$(asdf latest python)
+asdf set --home python "$latest"
+
+# Install or update uv package manager
+if command -v uv > /dev/null; then
+  uv self update
+else
+  curl -LsSf https://astral.sh/uv/install.sh | sh
+fi
 
 pip3 install --upgrade pip setuptools
-
 python3 -m pip install --upgrade --user pipx # Note --user installs to ~/.local/bin
 python3 -m pipx ensurepath
+
+asdf reshim python
 
 if is_available fish; then
   fish -c 'set --universal fish_user_paths $HOME/.local/bin $fish_user_paths'
 fi
 
-log_info "Installed Python."
+log_info "Installed Python $latest."
+log_info "Remember to run 'asdf reshim python' after installing Python CLI packages."

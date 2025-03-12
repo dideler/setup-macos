@@ -3,12 +3,8 @@
 source utils.sh && source ~/.bashrc
 
 # Elixir requires that Erlang be installed.
-asdf plugin-add erlang && erlang_status=$? || erlang_status=$?
-asdf plugin-add elixir && elixir_status=$? || elixir_status=$?
-
-# `asdf plugin-add` returns exit code 2 when plugin already installed, but it's not an error.
-[[ $erlang_status -ne 0 && $erlang_status -ne 2 ]] && exit $erlang_status
-[[ $elixir_status -ne 0 && $elixir_status -ne 2 ]] && exit $elixir_status
+asdf plugin add erlang
+asdf plugin add elixir
 
 asdf plugin update erlang
 asdf plugin update elixir
@@ -30,7 +26,15 @@ fi
 # https://github.com/asdf-vm/asdf-erlang/issues/164
 export CFLAGS="-O2 -Wno-error=implicit-function-declaration"
 
-asdf install erlang latest:24
-asdf install elixir 1.12.2-otp-24
+asdf install erlang latest
+asdf install elixir latest # Note that we want a matching OTP version to the Erlang version
+asdf reshim erlang
+asdf reshim elixir
 
-log_info "Installed Elixir."
+latest_erlang=$(asdf latest erlang)
+latest_elixir=$(asdf latest elixir)
+asdf set --home erlang "$latest_erlang"
+asdf set --home elixir "$latest_elixir"
+
+log_info "Installed Erlang $latest_erlang and Elixir $latest_elixir."
+log_info "Remember to run 'asdf reshim elixir' after installing Elixir CLI packages."

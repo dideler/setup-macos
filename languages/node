@@ -2,14 +2,14 @@
 
 source utils.sh && source ~/.bashrc
 
-asdf plugin-add nodejs && status=$? || status=$?
-
-# `asdf plugin-add` returns exit code 2 when plugin already installed, but it's not an error.
-[[ $status -ne 0 && $status -ne 2 ]] && exit $status
-
+asdf plugin add nodejs
 asdf plugin update nodejs
 
 asdf install nodejs latest
-asdf global nodejs $(asdf latest nodejs)
+asdf reshim nodejs
 
-log_info "Installed Node."
+latest=$(asdf latest nodejs)
+asdf set --home nodejs "$latest"
+
+log_info "Installed Node $latest."
+log_info "Remember to run 'asdf reshim nodejs' after installing NodeJS CLI packages."

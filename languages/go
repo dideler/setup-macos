@@ -2,15 +2,14 @@
 
 source utils.sh && source ~/.bashrc
 
-asdf plugin-add golang && status=$? || status=$?
-
-# `asdf plugin-add` returns exit code 2 when plugin already installed, but it's not an error.
-[[ $status -ne 0 && $status -ne 2 ]] && exit $status
-
+asdf plugin add golang
 asdf plugin update golang
 
 asdf install golang latest
-asdf global golang $(asdf latest golang)
+asdf reshim golang
 
-log_info "Installed Go."
-log_info "Remember to run 'asdf reshim golang' after 'go get' to setup shims for a package."
+latest=$(asdf latest golang)
+asdf set --home golang "$latest"
+
+log_info "Installed Go $latest."
+log_info "Remember to run 'asdf reshim golang' after installing Go CLI packages."
