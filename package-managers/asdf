@@ -2,40 +2,112 @@
 
 source utils.sh
 
-# Install latest asdf version
+function install_asdf_from_github() {
+  log_info "Installing asdf from GitHub releases..."
 
-if [[ ! -d ~/.asdf ]]; then
-  remote="https://github.com/asdf-vm/asdf.git"
+  # Create ~/bin directory if it doesn't exist
+  mkdir -p ~/bin
 
-  latest_tag=$(
-    git ls-remote --tags --exit-code --refs "$remote" | \
-    sed -E 's/^[[:xdigit:]]+[[:space:]]+refs\/tags\/(.+)/\1/g' | \
-    tail -n1
-  )
+  # Get latest release info
+  local release_url="https://api.github.com/repos/asdf-vm/asdf/releases/latest"
+  local release_info=$(curl -s "$release_url")
+  local version=$(echo "$release_info" | grep -o '"tag_name": "v[^"]*"' | cut -d'"' -f4)
 
-  git clone "$remote" --depth 1 --branch "$latest_tag" ~/.asdf
+  # Determine platform and architecture
+  local platform=$(uname -s | tr '[:upper:]' '[:lower:]')
+  local arch=$(uname -m)
+
+  # Map architecture to asset name
+  if [[ "$arch" == "x86_64" ]]; then
+    arch="amd64"
+  elif [[ "$arch" == "arm64" ]]; then
+    arch="arm64"
+  else
+    log_error "Unsupported architecture: $arch"
+    return 1
+  fi
+
+  # Build asset name
+  local asset_name="asdf-${version}-${platform}-${arch}.tar.gz"
+
+  # Get download URL
+  local download_url=$(echo "$release_info" | grep -o "\"browser_download_url\": \"[^\"]*${asset_name}\"" | cut -d'"' -f4)
+
+  if [[ -z "$download_url" ]]; then
+    log_error "Could not find download URL for $asset_name"
+    return 1
+  fi
+
+  # Create temporary directory
+  local tmp_dir=$(mktemp -d)
+
+  # Download and extract
+  curl -sL "$download_url" -o "${tmp_dir}/asdf.tar.gz"
+  tar -xzf "${tmp_dir}/asdf.tar.gz" -C "${tmp_dir}"
+
+  # Install binary
+  cp "${tmp_dir}/asdf" ~/bin/asdf
+  chmod +x ~/bin/asdf
+
+  # Clean up
+  rm -rf "${tmp_dir}"
+
+  # Add ~/bin to PATH if not already there
+  if [[ ":$PATH:" != *":$HOME/bin:"* ]]; then
+    echo 'export PATH="$HOME/bin:$PATH"' >> ~/.bashrc
+    echo 'export PATH="$HOME/bin:$PATH"' >> ~/.zshrc
+
+    if is_available fish; then
+      fish -c 'set --universal fish_user_paths $HOME/bin $fish_user_paths'
+    fi
+
+    # Update current PATH
+    export PATH="$HOME/bin:$PATH"
+  fi
+}
+
+function install_asdf_completions() {
+  local shell=${SHELL##*/}
+
+  case "$shell" in
+    bash)
+      asdf completion bash > ~/.asdf-completion.bash
+      grep -q "source ~/.asdf-completion.bash" ~/.bashrc || \
+        echo "source ~/.asdf-completion.bash" >> ~/.bashrc
+      ;;
+    zsh)
+      asdf completion zsh > ~/.asdf-completion.zsh
+      grep -q "source ~/.asdf-completion.zsh" ~/.zshrc || \
+        echo "source ~/.asdf-completion.zsh" >> ~/.zshrc
+      ;;
+    fish)
+      mkdir -p ~/.config/fish/completions
+      asdf completion fish > ~/.config/fish/completions/asdf.fish
+      ;;
+    elvish)
+      mkdir -p ~/.elvish
+      asdf completion elvish > ~/.elvish/asdf.elv
+      ;;
+    nushell)
+      mkdir -p ~/.config/nushell
+      asdf completion nushell > ~/.config/nushell/asdf.nu
+      ;;
+    *)
+      log_info "No completions installed. Unsupported shell: $shell"
+      ;;
+  esac
+}
+
+if ! is_available asdf; then
+  if is_available brew; then
+    log_info "Installing asdf via Homebrew..."
+    brew install asdf
+  else
+    install_asdf_from_github
+  fi
+
+  install_asdf_completions
+  log_info "Installed asdf $(asdf version) and shell completions."
+else
+  log_info "asdf ($(asdf version)) is already installed"
 fi
-
-# Setup for bash
-grep -q "source ~/.asdf/asdf.sh" ~/.bashrc || \
-  echo "source ~/.asdf/asdf.sh" >> ~/.bashrc
-
-grep -q "source ~/.asdf/completions/asdf.bash" ~/.bashrc || \
-  echo "source ~/.asdf/completions/asdf.bash" >> ~/.bashrc
-
-# Setup for zsh
-grep -q "source ~/.asdf/asdf.sh" ~/.zshrc || \
-  echo "source ~/.asdf/asdf.sh" >> ~/.zshrc
-
-grep -q "source ~/.asdf/completions/asdf.bash" ~/.zshrc || \
-  echo "source ~/.asdf/completions/asdf.bash" >> ~/.zshrc
-
-# Setup for fish
-if is_available fish; then
-  grep -q "source ~/.asdf/asdf.fish" ~/.config/fish/config.fish || \
-    echo "source ~/.asdf/asdf.fish" >> ~/.config/fish/config.fish
-
-  mkdir -p ~/.config/fish/completions && ln -sf ~/.asdf/completions/asdf.fish ~/.config/fish/completions
-fi
-
-log_info "Installed asdf."
