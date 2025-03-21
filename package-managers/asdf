@@ -2,6 +2,8 @@
 
 source utils.sh
 
+ASDF_DATA_DIR=${ASDF_DATA_DIR:-$HOME/.asdf}
+
 function install_asdf_from_github() {
   log_info "Installing asdf from GitHub releases..."
 
@@ -71,26 +73,25 @@ function install_asdf_completions() {
 
   case "$shell" in
     bash)
-      asdf completion bash > ~/.asdf-completion.bash
-      grep -q "source ~/.asdf-completion.bash" ~/.bashrc || \
-        echo "source ~/.asdf-completion.bash" >> ~/.bashrc
+      mkdir -p "$ASDF_DATA_DIR/completions/bash"
+      asdf completion bash > "$ASDF_DATA_DIR/completions/bash/asdf.bash"
+
+      if ! grep -q 'source "$ASDF_DATA_DIR/completions/bash/asdf.bash"' ~/.bashrc; then
+        echo 'source "$ASDF_DATA_DIR/completions/bash/asdf.bash"' >> ~/.bashrc
+      fi
       ;;
     zsh)
-      asdf completion zsh > ~/.asdf-completion.zsh
-      grep -q "source ~/.asdf-completion.zsh" ~/.zshrc || \
-        echo "source ~/.asdf-completion.zsh" >> ~/.zshrc
+      mkdir -p "$ASDF_DATA_DIR/completions/zsh"
+      asdf completion zsh > "$ASDF_DATA_DIR/completions/zsh/_asdf"
+
+      if ! grep -q 'source "$ASDF_DATA_DIR/completions/zsh/_asdf"' ~/.zshrc; then
+        echo 'fpath=($ASDF_DATA_DIR/completions/zsh $fpath)' >> ~/.zshrc
+        echo 'autoload -Uz compinit && compinit' >> ~/.zshrc
+      fi
       ;;
     fish)
       mkdir -p ~/.config/fish/completions
       asdf completion fish > ~/.config/fish/completions/asdf.fish
-      ;;
-    elvish)
-      mkdir -p ~/.elvish
-      asdf completion elvish > ~/.elvish/asdf.elv
-      ;;
-    nushell)
-      mkdir -p ~/.config/nushell
-      asdf completion nushell > ~/.config/nushell/asdf.nu
       ;;
     *)
       log_info "No completions installed. Unsupported shell: $shell"
