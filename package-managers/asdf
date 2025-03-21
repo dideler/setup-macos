@@ -68,6 +68,32 @@ function install_asdf_from_github() {
   fi
 }
 
+function add_shims_dir_to_path() {
+  local shell=${SHELL##*/}
+
+  case "$shell" in
+    bash)
+      if ! grep -q "ASDF_DATA_DIR" ~/.bash_profile; then
+        echo 'export ASDF_DATA_DIR=~/.asdf' >> ~/.bash_profile
+        echo 'export PATH="${ASDF_DATA_DIR:-$HOME/.asdf}/shims:$PATH"' >> ~/.bash_profile
+      fi
+      ;;
+    zsh)
+      if ! grep -q "ASDF_DATA_DIR" ~/.zshrc; then
+        echo 'export PATH="${ASDF_DATA_DIR:-$HOME/.asdf}/shims:$PATH"' >> ~/.zshrc
+      fi
+      ;;
+    fish)
+      if ! grep -q "ASDF_DATA_DIR" ~/.config/fish/config.fish; then
+        echo 'status --is-interactive; and set --export ASDF_DATA_DIR ~/.asdf; and fish_add_path $ASDF_DATA_DIR/shims' >> ~/.config/fish/config.fish
+      fi
+      ;;
+    *)
+      log_info "No shims directory added to PATH. Unsupported shell: $shell"
+      ;;
+  esac
+}
+
 function install_asdf_completions() {
   local shell=${SHELL##*/}
 
@@ -107,7 +133,10 @@ if ! is_available asdf; then
     install_asdf_from_github
   fi
 
+  add_shims_dir_to_path
+
   install_asdf_completions
+
   log_info "Installed asdf $(asdf version) and shell completions."
 else
   log_info "asdf ($(asdf version)) is already installed"
