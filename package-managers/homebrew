@@ -148,6 +148,7 @@ brew bundle --force --verbose --no-lock --file=- <<-BUNDLE
   cask 'brave-browser'
   cask 'buzz'
   cask 'caffeine'
+  cask 'chatgpt'
   cask 'cloudflare-warp'
   cask 'copyq'
   cask 'dash'
