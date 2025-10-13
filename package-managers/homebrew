@@ -156,7 +156,6 @@ brew bundle --force --verbose --no-lock --file=- <<-BUNDLE
   cask 'devdocs'
   cask 'docker'
   cask 'dropbox'
-  cask 'fig'
   cask 'finicky'
   cask 'firefox'
   cask 'flux'
@@ -186,12 +185,12 @@ brew bundle --force --verbose --no-lock --file=- <<-BUNDLE
   cask 'raycast'
   cask 'rectangle'
   cask 'rowanj-gitx'
-  cask 'skype'
   cask 'slack'
   cask 'spotify'
   cask 'telegram'
   cask 'visual-studio-code'
   cask 'whatsapp'
+  # cask 'xemu' # No longer passed the macOS Gatekeeper check. Will be disabled on 2026-09-01
   cask 'xquartz'
   # cask 'little-snitch'
   # cask 'mactex' # mactex is a very big all-in-one solution; consider basictex
