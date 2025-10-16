@@ -61,6 +61,7 @@ brew bundle --force --verbose --no-lock --file=- <<-BUNDLE
   brew 'gawk'
   brew 'gettext'
   brew 'gh'
+  brew 'ghostscript'
   brew 'gifsicle'
   brew 'git'
   brew 'git-filter-repo'
