@@ -100,6 +100,7 @@ brew bundle --force --verbose --no-lock --file=- <<-BUNDLE
   brew 'lzop'
   brew 'mac-cleanup-py'
   brew 'make'
+  brew 'mcat'
   brew 'mkcert'
   brew 'monolith'
   brew 'moreutils'
