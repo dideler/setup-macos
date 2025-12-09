@@ -28,6 +28,7 @@ brew bundle --force --verbose --no-lock --file=- <<-BUNDLE
   brew 'bat'
   brew 'brotli'
   brew 'caesiumclt'
+  brew 'carl'
   brew 'cloc'
   brew 'cmake'
   brew 'cmatrix'
