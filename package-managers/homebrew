@@ -14,211 +14,211 @@ brew update
 brew bundle --force --verbose --no-lock --file=- <<-BUNDLE
   tap 'homebrew/services'
   tap 'heroku/brew'
-  tap 'zph/homebrew-cervezas' # for pdftk
+  tap 'zph/homebrew-cervezas'         # for pdftk
   tap 'tarkah/tickrs'
 
-  brew 'achannarasappa/tap/ticker' # Terminal stock ticker with live updates and position tracking
-  brew 'airshare' # Cross-platform content sharing in a local network
-  brew 'argon2' # Password hashing library and CLI utility
-  brew 'autoconf' # Automatic configure script builder
-  brew 'automake' # Tool for generating GNU Standards-compliant Makefiles
-  brew 'awscli' # Official Amazon AWS command-line interface
-  brew 'bandwhich' # Terminal bandwidth utilization tool
-  brew 'bash' # Bourne-Again SHell, a UNIX command interpreter
-  brew 'bat' # Clone of cat(1) with syntax highlighting and Git integration
-  brew 'brotli' # Generic-purpose lossless compression algorithm by Google
-  brew 'caesiumclt' # Fast and efficient lossy and/or lossless image compression tool
-  brew 'carl' # Calendar for the command-line
-  brew 'cloc' # Statistics utility to count lines of code
-  brew 'cmake' # Cross-platform make
-  brew 'cmatrix' # Console Matrix
-  brew 'colordiff' # Color-highlighted diff(1) output
-  brew 'coreutils' # GNU File, Shell, and Text utilities
-  brew 'csvkit' # Suite of command-line tools for converting to and working with CSV
-  brew 'csvlens' # Command-line csv viewer
-  brew 'csvq' # SQL-like query language for csv
-  brew 'ctags' # Reimplementation of ctags(1)
-  brew 'curl-openssl' #
-  brew 'curl' # Get a file from an HTTP, HTTPS or FTP server
-  brew 'diff-pdf' # Visually compare two PDF files
-  brew 'diff-so-fancy' # Good-lookin' diffs with diff-highlight and more
-  brew 'direnv' # Load/unload environment variables based on $PWD
-  brew 'displayplacer' # Utility to configure multi-display resolutions and arrangements
-  brew 'docx2txt' # Converts Microsoft Office docx documents to equivalent text documents
-  brew 'dog' # Command-line DNS client
-  brew 'dos2unix' # Convert text between DOS, UNIX, and Mac formats
-  brew 'doxx' # Terminal document viewer for .docx files
-  brew 'dsq' # CLI tool for running SQL queries against JSON, CSV, Excel, Parquet, and more
-  brew 'duf' # Disk Usage/Free Utility - a better 'df' alternative
-  brew 'eva' # Calculator REPL, similar to bc(1)
-  brew 'eza' # Modern, maintained replacement for ls
-  brew 'fd' # Simple, fast and user-friendly alternative to find
-  brew 'fff' # Simple file manager written in bash
-  brew 'ffmpeg' # Play, record, convert, and stream audio and video
-  brew 'findomain' # Cross-platform subdomain enumerator
-  brew 'findutils' # Collection of GNU find, xargs, and locate
-  brew 'fish' # User-friendly command-line shell for UNIX-like operating systems
-  brew 'fselect' # Find files with SQL-like queries
-  brew 'fx' # Terminal JSON viewer
-  brew 'fzf' # Command-line fuzzy finder written in Go
-  brew 'gawk' # GNU awk utility
-  brew 'gettext' # GNU internationalization (i18n) and localization (l10n) library
-  brew 'gh' # GitHub command-line tool
-  brew 'ghostscript' # Interpreter for PostScript and PDF
-  brew 'gifsicle' # GIF image/animation creator/editor
-  brew 'git-filter-repo' # Quickly rewrite git repository history
-  brew 'git-lfs' # Git extension for versioning large files
-  brew 'git' # Distributed revision control system
-  brew 'gitleaks' # Audit git repos for secrets
-  brew 'gitui' # Blazing fast terminal-ui for git written in rust
-  brew 'glow' # Render markdown on the CLI
-  brew 'gnu-getopt' # Command-line option parsing utility
-  brew 'gnu-indent' # C code prettifier
-  brew 'gnu-sed' # GNU implementation of the famous stream editor
-  brew 'gnu-tar' # GNU version of the tar archiving utility
-  brew 'gnu-time' # GNU implementation of time utility
-  brew 'gnu-units' # GNU unit conversion tool
-  brew 'gnu-which' # GNU implementation of which utility
-  brew 'gnupg' # GNU Pretty Good Privacy (PGP) package
-  brew 'gnutls' # GNU Transport Layer Security (TLS) Library
-  brew 'go' # Open source programming language to build simple/reliable/efficient software
-  brew 'gobject-introspection' # Generate introspection data for GObject libraries
-  brew 'grep' # GNU grep, egrep and fgrep
-  brew 'gzip' # Popular GNU data compression program
-  brew 'heroku' # CLI for Heroku
-  brew 'highlight' # Convert source code to formatted text with syntax highlighting
-  brew 'htop-osx' #
-  brew 'httpie' # User-friendly cURL replacement (command-line HTTP client)
-  brew 'httrack' # Website copier/offline browser
-  brew 'hyperfine' # Command-line benchmarking tool
-  brew 'imagemagick' # Tools and libraries to manipulate images in many formats
-  brew 'img2pdf' # Convert images to PDF via direct JPEG inclusion
-  brew 'java' #
-  brew 'jp2a' # Convert JPG images to ASCII
-  brew 'jpeg' # Image manipulation library
-  brew 'jq' # Lightweight and flexible command-line JSON processor
-  brew 'less' # Pager program similar to more
-  brew 'lzop' # File compressor
-  brew 'mac-cleanup-py' # Python cleanup script for macOS
-  brew 'make' # Utility for directing compilation
-  brew 'mcat' # Terminal image, video, directory, and Markdown viewer
-  brew 'mkcert' # Simple tool to make locally trusted development certificates
-  brew 'monolith' # CLI tool for saving complete web pages as a single HTML file
-  brew 'moreutils' # Collection of tools that nobody wrote when UNIX was young
-  brew 'mosh' # Remote terminal application
-  brew 'ncdu' # NCurses Disk Usage
-  brew 'neovim' # Ambitious Vim-fork focused on extensibility and agility
-  brew 'numbat' # Statically typed programming language for scientific computations
-  brew 'nvtop' # Interactive GPU process monitor
-  brew 'openssl' #
-  brew 'p7zip' # 7-Zip (high compression file archiver) implementation
-  brew 'pandoc' # Swiss-army knife of markup format conversion
-  brew 'pdftk' #
-  brew 'pgcli' # CLI for Postgres with auto-completion and syntax highlighting
-  brew 'plz-cli' # Copilot for your terminal
-  brew 'pngquant' # PNG image optimizing utility
-  brew 'podcast-archiver' # Archive all episodes from your favorite podcasts
-  brew 'poppler' # PDF rendering library (based on the xpdf-3.0 code base)
-  brew 'postgresql' #
-  brew 'python3' #
-  brew 'qman' # Modern man page viewer
-  brew 'qpdf' # Tools for and transforming and inspecting PDF files
-  brew 'rar' # Archive manager for data compression and backups
-  brew 'readline' # Library for command-line editing
-  brew 'redis' # Persistent key-value database, with built-in net interface
-  brew 'rename' # Perl-powered file rename script with many helpful built-ins
-  brew 'ripgrep-all' # Wrapper around ripgrep that adds multiple rich file types
-  brew 'ripgrep' # Search tool like grep and The Silver Searcher
-  brew 'rm-improved' # Command-line deletion tool focused on safety, ergonomics, and performance
-  brew 'rsync' # Utility that provides fast incremental file transfer
-  brew 'screen' # Terminal multiplexer with VT100/ANSI terminal emulation
-  brew 'shellcheck' # Static analysis and lint tool, for (ba)sh scripts
-  brew 'termshot' # Creates screenshots based on terminal command output
-  brew 'the_silver_searcher' # Code-search similar to ack
-  brew 'tldr' # Simplified and community-driven man pages
-  brew 'trash' # CLI tool that moves files or folder to the trash
-  brew 'tree' # Display directories as trees (with optional color/HTML output)
-  brew 'unzip' # Extraction utility for .zip compressed archives
-  brew 'vim' # Vi 'workalike' with many additional features
-  brew 'vips' # Image processing library
-  brew 'watch' # Executes a program periodically, showing output fullscreen
-  brew 'watchexec' # Execute commands when watched files change (also see https://github.com/dideler/watcher)
-  brew 'waybackpy' # Wayback Machine API interface & command-line tool
-  brew 'wget' # Internet file retriever
-  brew 'yq' # Process YAML, JSON, XML, CSV and properties documents from the CLI
-  brew 'yt-dlp' # Replaces youtube-dl which became unsupported after v2021.12.17
-  brew 'zfind' # Search for files (even inside tar/zip/7z/rar) using a SQL-WHERE filter
+  brew 'achannarasappa/tap/ticker'    # Terminal stock ticker with live updates and position tracking
+  brew 'airshare'                     # Cross-platform content sharing in a local network
+  brew 'argon2'                       # Password hashing library and CLI utility
+  brew 'autoconf'                     # Automatic configure script builder
+  brew 'automake'                     # Tool for generating GNU Standards-compliant Makefiles
+  brew 'awscli'                       # Official Amazon AWS command-line interface
+  brew 'bandwhich'                    # Terminal bandwidth utilization tool
+  brew 'bash'                         # Bourne-Again SHell, a UNIX command interpreter
+  brew 'bat'                          # Clone of cat(1) with syntax highlighting and Git integration
+  brew 'brotli'                       # Generic-purpose lossless compression algorithm by Google
+  brew 'caesiumclt'                   # Fast and efficient lossy and/or lossless image compression tool
+  brew 'carl'                         # Calendar for the command-line
+  brew 'cloc'                         # Statistics utility to count lines of code
+  brew 'cmake'                        # Cross-platform make
+  brew 'cmatrix'                      # Console Matrix
+  brew 'colordiff'                    # Color-highlighted diff(1) output
+  brew 'coreutils'                    # GNU File, Shell, and Text utilities
+  brew 'csvkit'                       # Suite of command-line tools for converting to and working with CSV
+  brew 'csvlens'                      # Command-line csv viewer
+  brew 'csvq'                         # SQL-like query language for csv
+  brew 'ctags'                        # Reimplementation of ctags(1)
+  brew 'curl-openssl'                 #
+  brew 'curl'                         # Get a file from an HTTP, HTTPS or FTP server
+  brew 'diff-pdf'                     # Visually compare two PDF files
+  brew 'diff-so-fancy'                # Good-lookin' diffs with diff-highlight and more
+  brew 'direnv'                       # Load/unload environment variables based on $PWD
+  brew 'displayplacer'                # Utility to configure multi-display resolutions and arrangements
+  brew 'docx2txt'                     # Converts Microsoft Office docx documents to equivalent text documents
+  brew 'dog'                          # Command-line DNS client
+  brew 'dos2unix'                     # Convert text between DOS, UNIX, and Mac formats
+  brew 'doxx'                         # Terminal document viewer for .docx files
+  brew 'dsq'                          # CLI tool for running SQL queries against JSON, CSV, Excel, Parquet, and more
+  brew 'duf'                          # Disk Usage/Free Utility - a better 'df' alternative
+  brew 'eva'                          # Calculator REPL, similar to bc(1)
+  brew 'eza'                          # Modern, maintained replacement for ls
+  brew 'fd'                           # Simple, fast and user-friendly alternative to find
+  brew 'fff'                          # Simple file manager written in bash
+  brew 'ffmpeg'                       # Play, record, convert, and stream audio and video
+  brew 'findomain'                    # Cross-platform subdomain enumerator
+  brew 'findutils'                    # Collection of GNU find, xargs, and locate
+  brew 'fish'                         # User-friendly command-line shell for UNIX-like operating systems
+  brew 'fselect'                      # Find files with SQL-like queries
+  brew 'fx'                           # Terminal JSON viewer
+  brew 'fzf'                          # Command-line fuzzy finder written in Go
+  brew 'gawk'                         # GNU awk utility
+  brew 'gettext'                      # GNU internationalization (i18n) and localization (l10n) library
+  brew 'gh'                           # GitHub command-line tool
+  brew 'ghostscript'                  # Interpreter for PostScript and PDF
+  brew 'gifsicle'                     # GIF image/animation creator/editor
+  brew 'git-filter-repo'              # Quickly rewrite git repository history
+  brew 'git-lfs'                      # Git extension for versioning large files
+  brew 'git'                          # Distributed revision control system
+  brew 'gitleaks'                     # Audit git repos for secrets
+  brew 'gitui'                        # Blazing fast terminal-ui for git written in rust
+  brew 'glow'                         # Render markdown on the CLI
+  brew 'gnu-getopt'                   # Command-line option parsing utility
+  brew 'gnu-indent'                   # C code prettifier
+  brew 'gnu-sed'                      # GNU implementation of the famous stream editor
+  brew 'gnu-tar'                      # GNU version of the tar archiving utility
+  brew 'gnu-time'                     # GNU implementation of time utility
+  brew 'gnu-units'                    # GNU unit conversion tool
+  brew 'gnu-which'                    # GNU implementation of which utility
+  brew 'gnupg'                        # GNU Pretty Good Privacy (PGP) package
+  brew 'gnutls'                       # GNU Transport Layer Security (TLS) Library
+  brew 'go'                           # Open source programming language to build simple/reliable/efficient software
+  brew 'gobject-introspection'        # Generate introspection data for GObject libraries
+  brew 'grep'                         # GNU grep, egrep and fgrep
+  brew 'gzip'                         # Popular GNU data compression program
+  brew 'heroku'                       # CLI for Heroku
+  brew 'highlight'                    # Convert source code to formatted text with syntax highlighting
+  brew 'htop-osx'                     # Improved top (interactive process viewer)
+  brew 'httpie'                       # User-friendly cURL replacement (command-line HTTP client)
+  brew 'httrack'                      # Website copier/offline browser
+  brew 'hyperfine'                    # Command-line benchmarking tool
+  brew 'imagemagick'                  # Tools and libraries to manipulate images in many formats
+  brew 'img2pdf'                      # Convert images to PDF via direct JPEG inclusion
+  brew 'java'                         # Development kit for the Java programming language (openjdk)
+  brew 'jp2a'                         # Convert JPG images to ASCII
+  brew 'jpeg'                         # Image manipulation library
+  brew 'jq'                           # Lightweight and flexible command-line JSON processor
+  brew 'less'                         # Pager program similar to more
+  brew 'lzop'                         # File compressor
+  brew 'mac-cleanup-py'               # Python cleanup script for macOS
+  brew 'make'                         # Utility for directing compilation
+  brew 'mcat'                         # Terminal image, video, directory, and Markdown viewer
+  brew 'mkcert'                       # Simple tool to make locally trusted development certificates
+  brew 'monolith'                     # CLI tool for saving complete web pages as a single HTML file
+  brew 'moreutils'                    # Collection of tools that nobody wrote when UNIX was young
+  brew 'mosh'                         # Remote terminal application
+  brew 'ncdu'                         # NCurses Disk Usage
+  brew 'neovim'                       # Ambitious Vim-fork focused on extensibility and agility
+  brew 'numbat'                       # Statically typed programming language for scientific computations
+  brew 'nvtop'                        # Interactive GPU process monitor
+  brew 'openssl'                      # Cryptography and SSL/TLS Toolkit
+  brew 'p7zip'                        # 7-Zip (high compression file archiver) implementation
+  brew 'pandoc'                       # Swiss-army knife of markup format conversion
+  brew 'pdftk'                        # PDF toolkit for merging, splitting, encrypting, decrypting, and repairing PDFs
+  brew 'pgcli'                        # CLI for Postgres with auto-completion and syntax highlighting
+  brew 'plz-cli'                      # Copilot for your terminal
+  brew 'pngquant'                     # PNG image optimizing utility
+  brew 'podcast-archiver'             # Archive all episodes from your favorite podcasts
+  brew 'poppler'                      # PDF rendering library (based on the xpdf-3.0 code base)
+  brew 'postgresql'                   # Object-relational database system
+  brew 'python3'                      # Interpreted, interactive, object-oriented programming language
+  brew 'qman'                         # Modern man page viewer
+  brew 'qpdf'                         # Tools for and transforming and inspecting PDF files
+  brew 'rar'                          # Archive manager for data compression and backups
+  brew 'readline'                     # Library for command-line editing
+  brew 'redis'                        # Persistent key-value database, with built-in net interface
+  brew 'rename'                       # Perl-powered file rename script with many helpful built-ins
+  brew 'ripgrep-all'                  # Wrapper around ripgrep that adds multiple rich file types
+  brew 'ripgrep'                      # Search tool like grep and The Silver Searcher
+  brew 'rm-improved'                  # Command-line deletion tool focused on safety, ergonomics, and performance
+  brew 'rsync'                        # Utility that provides fast incremental file transfer
+  brew 'screen'                       # Terminal multiplexer with VT100/ANSI terminal emulation
+  brew 'shellcheck'                   # Static analysis and lint tool, for (ba)sh scripts
+  brew 'termshot'                     # Creates screenshots based on terminal command output
+  brew 'the_silver_searcher'          # Code-search similar to ack
+  brew 'tldr'                         # Simplified and community-driven man pages
+  brew 'trash'                        # CLI tool that moves files or folder to the trash
+  brew 'tree'                         # Display directories as trees (with optional color/HTML output)
+  brew 'unzip'                        # Extraction utility for .zip compressed archives
+  brew 'vim'                          # Vi 'workalike' with many additional features
+  brew 'vips'                         # Image processing library
+  brew 'watch'                        # Executes a program periodically, showing output fullscreen
+  brew 'watchexec'                    # Execute commands when watched files change (also see https://github.com/dideler/watcher)
+  brew 'waybackpy'                    # Wayback Machine API interface & command-line tool
+  brew 'wget'                         # Internet file retriever
+  brew 'yq'                           # Process YAML, JSON, XML, CSV and properties documents from the CLI
+  brew 'yt-dlp'                       # Replaces youtube-dl which became unsupported after v2021.12.17
+  brew 'zfind'                        # Search for files (even inside tar/zip/7z/rar) using a SQL-WHERE filter
 
-  cask '1password-cli' # Command-line interface for 1Password
-  cask '1password' # Password manager that keeps all passwords secure behind one password
-  cask 'aerial' # Apple TV Aerial screensaver
-  cask 'airtable' # Spreadsheet-database hybrid cloud collaboration
-  cask 'alfred' # Application launcher and productivity software
-  cask 'avibrazil-rdm' # Utility to set a Retina display to custom resolutions
-  cask 'balenaetcher' # Tool to flash OS images to SD cards & USB drives
-  cask 'brave-browser' # Web browser focusing on privacy
-  cask 'buzz' # Transcribes and translates audio
-  cask 'caffeine' # Utility that prevents the system from going to sleep
-  cask 'cardinal-search' # Fastest file searching tool
-  cask 'chatgpt-atlas' # OpenAI's official browser with ChatGPT built in
-  cask 'chatgpt' # OpenAI's official ChatGPT desktop app
-  cask 'claude' # Anthropic's official Claude AI desktop app
-  cask 'cloudflare-warp' # Free app that makes your Internet safer
-  # cask 'copilot-cli' # Brings the power of Copilot coding agent directly to your terminal
-  cask 'copyq' # Clipboard manager with advanced features
-  cask 'cursor' # Write, edit, and chat about your code with AI
-  cask 'dash' # API documentation browser and code snippet manager
-  cask 'devdocs' # Full-featured desktop app for DevDocs.io
-  cask 'docker' # Pack, ship and run any application as a lightweight container
-  cask 'dropbox' # Client for the Dropbox cloud storage service
-  cask 'finicky' # Utility for customizing which browser to start
-  cask 'firefox' # Web browser
-  cask 'flux' # Lightweight scripting language for querying databases
-  cask 'flycut' # Clipboard manager for developers
-  cask 'github' # Desktop client for GitHub repositories
-  cask 'google-chrome' # Web browser
-  cask 'google-drive' # Client for the Google Drive storage service
-  cask 'google-earth-pro' # Virtual globe
-  cask 'hiddenbar' # Utility to hide menu bar items
-  cask 'iina' # Free and open-source media player
-  cask 'imageoptim' # Tool to optimise images to a smaller size
-  cask 'insomnia' # HTTP and GraphQL Client
-  cask 'iterm2' # Post-install: Install shell integrations + AI plugin + browser plugin
-  cask 'kap' # Open-source screen recorder built with web technology
-  cask 'keybase' # End-to-end encryption software
-  cask 'lepton' # Snippet management app
-  # cask 'nessie-app' # Knowledge base from AI chats
-  cask 'ngrok' # Reverse proxy, secure introspectable tunnels to localhost
-  cask 'notesollama' # LLM support for Apple Notes through Ollama
-  cask 'obsidian' # Knowledge base that works on top of a local folder of plain text Markdown files
-  cask 'ollama' # Create, run, and share large language models (LLMs)
-  cask 'ollamac' # Interact with Ollama models
-  cask 'osquery' # SQL powered operating system instrumentation and analytics
-  cask 'paw' # HTTP client that helps testing and describing APIs
-  cask 'pgadmin4' # Administration and development platform for PostgreSQL
-  cask 'physics-101' # Collection of simulations, tools, and equations across the field of physics (key SIZ9NKLYAS)
-  cask 'postico' # GUI client for PostgreSQL databases
-  cask 'postman' # Collaboration platform for API development
-  cask 'raycast' # Control your tools with a few keystrokes
-  cask 'rectangle' # Move and resize windows using keyboard shortcuts or snap areas
-  cask 'rowanj-gitx' # Native graphical client for the git version control system
-  cask 'signal' # Instant messaging application focusing on security
-  cask 'slab' # Knowledge management for organisations
-  cask 'slack' # Team communication and collaboration software
-  cask 'spotify' # Music streaming service
-  cask 'superkey' # Search and click text anywhere on screen
-  cask 'telegram' # Messaging app with a focus on speed and security
-  cask 'visual-studio-code' # Open-source code editor
-  cask 'whatsapp' # Native desktop client for WhatsApp
-  # cask 'xemu' # Original Xbox Emulator. No longer passed the macOS Gatekeeper check, will be disabled on 2026-09-01
-  cask 'xquartz' # Open-source version of the X.Org X Window System
-  cask 'zed' # Multiplayer code editor
-  # cask 'little-snitch' # Host-based application firewall
-  # cask 'mactex' # Full TeX Live distribution with GUI applications (very big all-in-one solution; use lighterweight basictex)
-  # cask 'sonic-robo-blast-2' # 3D open-source Sonic the Hedgehog fangame built using a Doom Legacy port of Doom
-  # cask 'sonic-robo-blast-2-kart' # Classic styled kart racer, complete with beautiful courses, and wacky items
-  # cask 'spectacle' # Move and resize windows with ease (switched to rectangle)
-  # cask 'vlc' # Multimedia player
+  cask '1password-cli'                # Command-line interface for 1Password
+  cask '1password'                    # Password manager that keeps all passwords secure behind one password
+  cask 'aerial'                       # Apple TV Aerial screensaver
+  cask 'airtable'                     # Spreadsheet-database hybrid cloud collaboration
+  cask 'alfred'                       # Application launcher and productivity software
+  cask 'avibrazil-rdm'                # Utility to set a Retina display to custom resolutions
+  cask 'balenaetcher'                 # Tool to flash OS images to SD cards & USB drives
+  cask 'brave-browser'                # Web browser focusing on privacy
+  cask 'buzz'                         # Transcribes and translates audio
+  cask 'caffeine'                     # Utility that prevents the system from going to sleep
+  cask 'cardinal-search'              # Fastest file searching tool
+  cask 'chatgpt-atlas'                # OpenAI's official browser with ChatGPT built in
+  cask 'chatgpt'                      # OpenAI's official ChatGPT desktop app
+  cask 'claude'                       # Anthropic's official Claude AI desktop app
+  cask 'cloudflare-warp'              # Free app that makes your Internet safer
+  cask 'copyq'                        # Clipboard manager with advanced features
+  cask 'cursor'                       # Write, edit, and chat about your code with AI
+  cask 'dash'                         # API documentation browser and code snippet manager
+  cask 'devdocs'                      # Full-featured desktop app for DevDocs.io
+  cask 'docker'                       # Pack, ship and run any application as a lightweight container
+  cask 'dropbox'                      # Client for the Dropbox cloud storage service
+  cask 'finicky'                      # Utility for customizing which browser to start
+  cask 'firefox'                      # Web browser
+  cask 'flux'                         # Lightweight scripting language for querying databases
+  cask 'flycut'                       # Clipboard manager for developers
+  cask 'github'                       # Desktop client for GitHub repositories
+  cask 'google-chrome'                # Web browser
+  cask 'google-drive'                 # Client for the Google Drive storage service
+  cask 'google-earth-pro'             # Virtual globe
+  cask 'hiddenbar'                    # Utility to hide menu bar items
+  cask 'iina'                         # Free and open-source media player
+  cask 'imageoptim'                   # Tool to optimise images to a smaller size
+  cask 'insomnia'                     # HTTP and GraphQL Client
+  cask 'iterm2'                       # Post-install: Install shell integrations + AI plugin + browser plugin
+  cask 'kap'                          # Open-source screen recorder built with web technology
+  cask 'keybase'                      # End-to-end encryption software
+  cask 'lepton'                       # Snippet management app
+  cask 'ngrok'                        # Reverse proxy, secure introspectable tunnels to localhost
+  cask 'notesollama'                  # LLM support for Apple Notes through Ollama
+  cask 'obsidian'                     # Knowledge base that works on top of a local folder of plain text Markdown files
+  cask 'ollama'                       # Create, run, and share large language models (LLMs)
+  cask 'ollamac'                      # Interact with Ollama models
+  cask 'osquery'                      # SQL powered operating system instrumentation and analytics
+  cask 'paw'                          # HTTP client that helps testing and describing APIs
+  cask 'pgadmin4'                     # Administration and development platform for PostgreSQL
+  cask 'physics-101'                  # Collection of simulations, tools, and equations across the field of physics (key SIZ9NKLYAS)
+  cask 'postico'                      # GUI client for PostgreSQL databases
+  cask 'postman'                      # Collaboration platform for API development
+  cask 'raycast'                      # Control your tools with a few keystrokes
+  cask 'rectangle'                    # Move and resize windows using keyboard shortcuts or snap areas
+  cask 'rowanj-gitx'                  # Native graphical client for the git version control system
+  cask 'signal'                       # Instant messaging application focusing on security
+  cask 'slab'                         # Knowledge management for organisations
+  cask 'slack'                        # Team communication and collaboration software
+  cask 'spotify'                      # Music streaming service
+  cask 'superkey'                     # Search and click text anywhere on screen
+  cask 'telegram'                     # Messaging app with a focus on speed and security
+  cask 'visual-studio-code'           # Open-source code editor
+  cask 'whatsapp'                     # Native desktop client for WhatsApp
+  cask 'xquartz'                      # Open-source version of the X.Org X Window System
+  # cask 'copilot-cli'                  # Brings the power of Copilot coding agent directly to your terminal
+  # cask 'little-snitch'                # Host-based application firewall
+  # cask 'mactex'                       # Full TeX Live distribution with GUI applications (very big all-in-one solution; use lighterweight basictex)
+  # cask 'nessie-app'                   # Knowledge base from AI chats
+  # cask 'sonic-robo-blast-2-kart'      # Classic styled kart racer, complete with beautiful courses, and wacky items
+  # cask 'sonic-robo-blast-2'           # 3D open-source Sonic the Hedgehog fangame built using a Doom Legacy port of Doom
+  # cask 'spectacle'                    # Move and resize windows with ease (switched to rectangle)
+  # cask 'vlc'                          # Multimedia player
+  # cask 'xemu'                         # Original Xbox Emulator. No longer passed the macOS Gatekeeper check, will be disabled on 2026-09-01
+  # cask 'zed'                          # Multiplayer code editor
 
   mas 'Discovery', id: 1381004916
 BUNDLE
