@@ -133,6 +133,7 @@ brew bundle --force --verbose --no-lock --file=- <<-BUNDLE
   brew 'rsync'
   brew 'screen'
   brew 'shellcheck'
+  brew 'termshot'
   brew 'the_silver_searcher'
   brew 'tldr'
   brew 'trash'
