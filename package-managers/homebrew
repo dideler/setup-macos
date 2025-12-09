@@ -51,7 +51,7 @@ brew bundle --force --verbose --no-lock --file=- <<-BUNDLE
   brew 'dsq'
   brew 'duf'
   brew 'eva'
-  brew 'exa'
+  brew 'eza'
   brew 'fd'
   brew 'fff'
   brew 'ffmpeg'
