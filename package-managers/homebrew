@@ -158,6 +158,7 @@ brew bundle --force --verbose --no-lock --file=- <<-BUNDLE
   cask 'buzz'
   cask 'caffeine'
   cask 'cardinal-search'
+  cask 'chatgpt-atlas'
   cask 'chatgpt'
   cask 'claude'
   cask 'cloudflare-warp'
