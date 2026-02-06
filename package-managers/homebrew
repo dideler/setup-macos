@@ -144,6 +144,7 @@ brew bundle --force --verbose --no-lock --file=- <<-BUNDLE
   brew 'watchexec'                    # Execute commands when watched files change (also see https://github.com/dideler/watcher)
   brew 'waybackpy'                    # Wayback Machine API interface & command-line tool
   brew 'wget'                         # Internet file retriever
+  brew 'yap'                          # On-device audio transcription using Speech.framework
   brew 'yq'                           # Process YAML, JSON, XML, CSV and properties documents from the CLI
   brew 'yt-dlp'                       # Replaces youtube-dl which became unsupported after v2021.12.17
   brew 'zfind'                        # Search for files (even inside tar/zip/7z/rar) using a SQL-WHERE filter
