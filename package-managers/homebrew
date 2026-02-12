@@ -151,6 +151,7 @@ brew bundle --force --verbose --no-lock --file=- <<-BUNDLE
 
   cask '1password-cli'                # Command-line interface for 1Password
   cask '1password'                    # Password manager that keeps all passwords secure behind one password
+  cask 'antigravity'                  # Google AI Coding Agent IDE
   cask 'aerial'                       # Apple TV Aerial screensaver
   cask 'airtable'                     # Spreadsheet-database hybrid cloud collaboration
   cask 'alfred'                       # Application launcher and productivity software
