@@ -163,10 +163,10 @@ brew bundle --force --verbose --no-lock --file=- <<-BUNDLE
   # cask 'zed'                          # Multiplayer code editor
   cask '1password-cli'                # Command-line interface for 1Password
   cask '1password'                    # Password manager that keeps all passwords secure behind one password
-  cask 'antigravity'                  # Google AI Coding Agent IDE
   cask 'aerial'                       # Apple TV Aerial screensaver
   cask 'airtable'                     # Spreadsheet-database hybrid cloud collaboration
   cask 'alfred'                       # Application launcher and productivity software
+  cask 'antigravity'                  # Google AI Coding Agent IDE
   cask 'avibrazil-rdm'                # Utility to set a Retina display to custom resolutions
   cask 'balenaetcher'                 # Tool to flash OS images to SD cards & USB drives
   cask 'brave-browser'                # Web browser focusing on privacy
