@@ -188,9 +188,11 @@ brew bundle --force --verbose --no-lock --file=- <<-BUNDLE
   cask 'flux'                         # Lightweight scripting language for querying databases
   cask 'flycut'                       # Clipboard manager for developers
   cask 'github'                       # Desktop client for GitHub repositories
+  cask 'go2tv'                        # Cast media files to Smart TVs and Chromecast devices
   cask 'google-chrome'                # Web browser
   cask 'google-drive'                 # Client for the Google Drive storage service
   cask 'google-earth-pro'             # Virtual globe
+  cask 'greensignal'                  # Pre-call check for camera, microphone, speaker, and network quality
   cask 'hiddenbar'                    # Utility to hide menu bar items
   cask 'iina'                         # Free and open-source media player
   cask 'imageoptim'                   # Tool to optimise images to a smaller size
@@ -198,18 +200,18 @@ brew bundle --force --verbose --no-lock --file=- <<-BUNDLE
   cask 'iterm2'                       # Post-install: Install shell integrations + AI plugin + browser plugin
   cask 'kap'                          # Open-source screen recorder built with web technology
   cask 'keybase'                      # End-to-end encryption software
-  cask 'lepton'                       # Snippet management app
   cask 'ngrok'                        # Reverse proxy, secure introspectable tunnels to localhost
   cask 'notesollama'                  # LLM support for Apple Notes through Ollama
   cask 'obsidian'                     # Knowledge base that works on top of a local folder of plain text Markdown files
+  cask 'ollama-app'                   # Get up and running with large language models locally
   cask 'ollama'                       # Create, run, and share large language models (LLMs)
-  cask 'ollamac'                      # Interact with Ollama models
   cask 'osquery'                      # SQL powered operating system instrumentation and analytics
   cask 'paw'                          # HTTP client that helps testing and describing APIs
   cask 'pgadmin4'                     # Administration and development platform for PostgreSQL
   cask 'physics-101'                  # Collection of simulations, tools, and equations across the field of physics (key SIZ9NKLYAS)
   cask 'postico'                      # GUI client for PostgreSQL databases
   cask 'postman'                      # Collaboration platform for API development
+  cask 'radix'                        # Disk space analyzer
   cask 'raycast'                      # Control your tools with a few keystrokes
   cask 'rectangle'                    # Move and resize windows using keyboard shortcuts or snap areas
   cask 'rowanj-gitx'                  # Native graphical client for the git version control system
