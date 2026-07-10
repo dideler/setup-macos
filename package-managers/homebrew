@@ -149,6 +149,18 @@ brew bundle --force --verbose --no-lock --file=- <<-BUNDLE
   brew 'yt-dlp'                       # Replaces youtube-dl which became unsupported after v2021.12.17
   brew 'zfind'                        # Search for files (even inside tar/zip/7z/rar) using a SQL-WHERE filter
 
+  # cask 'copilot-cli'                  # Brings the power of Copilot coding agent directly to your terminal
+  # cask 'ghostpepper'                  # Speech-to-text and meeting transcription tool
+  # cask 'little-snitch'                # Host-based application firewall
+  # cask 'mactex'                       # Full TeX Live distribution with GUI applications (very big all-in-one solution; use lighterweight basictex)
+  # cask 'nessie-app'                   # Knowledge base from AI chats
+  # cask 'sonic-robo-blast-2-kart'      # Classic styled kart racer, complete with beautiful courses, and wacky items
+  # cask 'sonic-robo-blast-2'           # 3D open-source Sonic the Hedgehog fangame built using a Doom Legacy port of Doom
+  # cask 'spectacle'                    # Move and resize windows with ease (switched to rectangle)
+  # cask 'vlc'                          # Multimedia player
+  # cask 'voiceink'                     # Voice to text app
+  # cask 'xemu'                         # Original Xbox Emulator. No longer passed the macOS Gatekeeper check, will be disabled on 2026-09-01
+  # cask 'zed'                          # Multiplayer code editor
   cask '1password-cli'                # Command-line interface for 1Password
   cask '1password'                    # Password manager that keeps all passwords secure behind one password
   cask 'antigravity'                  # Google AI Coding Agent IDE
@@ -210,16 +222,6 @@ brew bundle --force --verbose --no-lock --file=- <<-BUNDLE
   cask 'visual-studio-code'           # Open-source code editor
   cask 'whatsapp'                     # Native desktop client for WhatsApp
   cask 'xquartz'                      # Open-source version of the X.Org X Window System
-  # cask 'copilot-cli'                  # Brings the power of Copilot coding agent directly to your terminal
-  # cask 'little-snitch'                # Host-based application firewall
-  # cask 'mactex'                       # Full TeX Live distribution with GUI applications (very big all-in-one solution; use lighterweight basictex)
-  # cask 'nessie-app'                   # Knowledge base from AI chats
-  # cask 'sonic-robo-blast-2-kart'      # Classic styled kart racer, complete with beautiful courses, and wacky items
-  # cask 'sonic-robo-blast-2'           # 3D open-source Sonic the Hedgehog fangame built using a Doom Legacy port of Doom
-  # cask 'spectacle'                    # Move and resize windows with ease (switched to rectangle)
-  # cask 'vlc'                          # Multimedia player
-  # cask 'xemu'                         # Original Xbox Emulator. No longer passed the macOS Gatekeeper check, will be disabled on 2026-09-01
-  # cask 'zed'                          # Multiplayer code editor
 
   mas 'Discovery', id: 1381004916
 BUNDLE
